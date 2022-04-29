@@ -28,16 +28,6 @@
   padding: 2em;
 }
 
-.edit_icon {
-  width: 20px;
-  height: 20px;
-}
-
-.blue_edit_button {
-  transition: all 0.2s;
-  color: var(--blue-600);
-}
-
 .profile_container_img {
   margin-bottom: 2em;
 }
@@ -71,20 +61,25 @@
   margin-bottom: auto;
 }
 
+.edit_btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
 // ------------------------------------ MAIN SIDE ----------------------------------------
 
 .infos_container {
-  padding: 1.6rem;
-  padding-top: 1.4rem;
+  padding: 0 1.6rem;
+  margin-top: 1.4rem;
 }
 
-.campo {
+.field {
   margin-bottom: 3em;
 }
 
-.campo_label {
+.field_label {
   font-size: 1.4em;
-  padding-top: 1.5em;
+  padding-top: 1em;
 
   &.light {
     color: var(--gray-500);
@@ -95,15 +90,6 @@
   }
 }
 
-.campo_input {
+.field_input {
   font-size: 0.8em;
-}
-
-.save_button_contaier {
-  margin-top: 1.5em;
-}
-
-.save_button {
-  width: 100%;
-  transition: all 0.2s;
 }
