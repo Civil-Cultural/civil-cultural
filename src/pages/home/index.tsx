@@ -85,14 +85,18 @@ function CardTopicsLoad() {
   );
 }
 
+let titleHome: string = "";
+
 const Home = () => {
   const { theme } = useTheme();
   const { t } = useTranslation();
   const cardTest = Array(4).fill("teste");
 
+  titleHome = t("pages.home.title");
+
   return (
-    <Col className="d-flex my-2 justify-content-between">
-      <Col className="col-10 col-lg-7 mx-auto mx-lg-0 px-0 border-1 border-secondary">
+    <Col className="d-flex my-2 px-0 justify-content-between">
+      <Col className="col-12 col-md-10 col-lg-7 mx-auto mx-lg-0 px-0 border-1 border-secondary">
         {
           /* COMPONENTE CARD */
           cardTest.map((x, i) => (
@@ -192,7 +196,6 @@ const Home = () => {
             <h3 className={`${styles.titleMenu} ${styles[theme]}`}>
               {t("pages.home.menu_category")}
             </h3>
-            <InputSearch className={`col-12 `}/>
           </Col>
           <Col className="col-11 mx-auto py-2 d-flex flex-wrap gap-1">
             <span className={`${styles.badgeCategories} ${styles[theme]}`}>
@@ -254,12 +257,6 @@ const Home = () => {
   );
 };
 
-
-
-export default Layout(
-  Home,
-  MainLayout,
-  {
-    title: 'Home'
-  }
-)
+export default Layout(Home, MainLayout, {
+  title: titleHome,
+});

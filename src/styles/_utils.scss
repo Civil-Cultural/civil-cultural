@@ -1,0 +1,8 @@
+
+
+@mixin support_browser($propert, $value...) {
+    --webkit-#{$propert}: $value;
+    --moz-#{$propert}: $value;
+    --o-#{$propert}: $value;
+    #{$propert}: $value;
+}

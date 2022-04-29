@@ -14,7 +14,7 @@ export default function Logo({
   ...props
 }: ImageProps) {
   const { theme } = useTheme();
-  console.log(theme);
+
   return (
     <Image
       width={width}

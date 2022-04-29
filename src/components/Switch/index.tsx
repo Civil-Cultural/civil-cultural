@@ -11,16 +11,17 @@ import styles from "Components/Switch/styles.module.scss";
 
 export default function Switch({ className }: SwitchProps) {
   const { theme, toggleTheme } = useTheme();
-  const [checked, setChecked] = useState(theme === "dark");
+  const [checked, setChecked] = useState(() => theme === "dark");
   const themeValue = theme === "dark" ? "light" : "dark";
 
   useEffect(() => {
     setChecked(theme === "dark");
-  }, [theme]);
+    console.log(theme === "dark");
+  }, []);
 
   function alternateTheme() {
     toggleTheme(themeValue);
-    setChecked(!(theme === "dark"));
+    setChecked(theme === "dark");
   }
 
   return (

@@ -38,6 +38,7 @@
   },
   "pages": {
     "home": {
+      "title": "Home",
       "popover_message": "Este navegador não tem suporte a reconhecimento de fala",
       "menu_publication": "Publicações mais recentes",
       "menu_category": "Publicações por categoria"
@@ -48,7 +49,7 @@
       "create_account": "Criar Conta"
     },
     "register": {
-      "title": "Registro",
+      "title": "Registrar",
       "link_login": "Logar-se"
     },
     "forgot_password": {

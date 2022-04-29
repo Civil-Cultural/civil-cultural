@@ -42,12 +42,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: .6em;
+    top: 3px;
     left: 5px;
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    transform: translateY(-50%);
     background-color: var(--sidebar-color);
     transition: var(--tran-04);
   }

@@ -58,15 +58,6 @@ export default function Sidebar({ active, handleClose }: SidebarState) {
       }`}
     >
       <Col
-        className={`${styles.sidebar_header} col-auto d-flex align-items-center d-lg-none`}
-      >
-        <Logo width={26} height={26} />
-        <h4 className={`${styles.logo_title} ${styles[theme]}`}>
-          Civil Cultural
-        </h4>
-      </Col>
-
-      <Col
         className={`${styles.sidebar_body} ${styles[theme]} flex-grow-1 col-auto`}
       >
         <Nav className="d-flex flex-column mt-4 gap-1">

@@ -6,7 +6,8 @@
     "dev": "next dev -p 5555",
     "build": "next build",
     "start": "next start",
-    "create-env": "cp .env.example .env"
+    "create-env": "cp .env.example .env",
+    "serve-fake": "json-server db-fake.json --port 8080"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.8.3",
