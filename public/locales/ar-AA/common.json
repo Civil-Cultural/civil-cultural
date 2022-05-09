@@ -58,6 +58,14 @@
     "reset_password": {
       "title": "أعد تعريف كلمة المرور",
       "message_info": "اختر كلمة مرور جديدة لإعادة تعيينها"
+    },
+    "profile": {
+      "edit": "تعديل",
+      "profile": "حساب تعريفي",
+      "personal_information": "معلومات شخصية",
+      "localization": "الموقع",
+      "contacts": "جهات الاتصال",
+      "account": "الحساب"
     }
   }
 }

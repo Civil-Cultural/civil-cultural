@@ -3,16 +3,16 @@ import { useTheme } from 'Hooks/useTheme'
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { FloatingLabel } from 'react-bootstrap'
 
 /* ----------- COMPONENTS ----------- */
+import { FloatingLabel } from 'react-bootstrap'
 import { Layout } from 'utils/Layout'
 import MainLayout from 'Layouts/MainLayout'
 import Input from 'Components/Input'
 import Button from 'Components/Button'
 
 /* ----------- ICONS ----------- */
-import { MdLocationPin } from 'react-icons/md';
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 
 /* ----------- STYLES ----------- */
 import styles from 'Pages/profile/styles.module.scss'
@@ -21,19 +21,21 @@ function Profile() {
   const { theme } = useTheme()
   const { t } = useTranslation();
 
+  const [showPassword, setShowPassword] = useState(false)
+
   return (
     <div className={`${styles.body} ${styles[theme]}`}>
       <div className={`d-flex justify-content-center`}>
         <div className={`col-12 col-lg-10 ${styles.header}`}>
-          <h1 className={`${styles.page_title}`}>Profile</h1>
+          <h1 className={`${styles.page_title}`}>{t("pages.profile.profile")}</h1>
         </div>
       </div>
       <div className={`d-flex justify-content-center`}>
         <section className={`col-12 col-lg-10 border border-secondary rounded-3 ${styles.section} ${styles[theme]}`}>
               <div className={`d-flex justify-content-between ${styles.section_header} ${styles[theme]}`}>
-                <h2 className={`${styles.section_title}`}>{t("pages.profile.contacts")}</h2>
+                <h2 className={`${styles.section_title}`}>{t("pages.profile.personal_information")}</h2>
                 <Button type='button' className={`${styles.edit_btn}`} >
-                  EDITAR
+                  {t("pages.profile.edit")}
                 </Button>
               </div>
               <div className={`${styles.input_container} ${styles[theme]}`}>
@@ -63,9 +65,9 @@ function Profile() {
       <div className={`d-flex justify-content-center`}>
         <section className={`col-12 col-lg-10 border border-secondary rounded-3 ${styles.section} ${styles[theme]}`}>
               <div className={`d-flex justify-content-between ${styles.section_header} ${styles[theme]}`}>
-                <h2 className={`${styles.section_title}`}>Localizaçao</h2>
+                <h2 className={`${styles.section_title}`}>{t("pages.profile.localization")}</h2>
                 <Button type='button' className={`${styles.edit_btn}`}>
-                  EDITAR
+                  {t("pages.profile.edit")}
                 </Button>
               </div>
               <div className={`${styles.input_container} ${styles[theme]}`}>
@@ -128,9 +130,9 @@ function Profile() {
       <div className={`d-flex justify-content-center`}>
         <section className={`col-12 col-lg-10 border border-secondary rounded-3 ${styles.section} ${styles[theme]}`}>
               <div className={`d-flex justify-content-between ${styles.section_header} ${styles[theme]}`}>
-                <h2 className={`${styles.section_title}`}>Contatos</h2>
+                <h2 className={`${styles.section_title}`}>{t("pages.profile.contacts")}</h2>
                 <Button type='button' className={`${styles.edit_btn}`} >
-                  EDITAR
+                  {t("pages.profile.edit")}
                 </Button>
               </div>
               <div className={`${styles.input_container} ${styles[theme]}`}>
@@ -160,9 +162,9 @@ function Profile() {
       <div className={`d-flex justify-content-center`}>
         <section className={`col-12 col-lg-10 border border-secondary rounded-3 ${styles.section} ${styles[theme]}`}>
               <div className={`d-flex justify-content-between ${styles.section_header} ${styles[theme]}`}>
-                <h2 className={`${styles.section_title}`}>Conta</h2>
+                <h2 className={`${styles.section_title}`}>{t("pages.profile.account")}</h2>
                 <Button type='button' className={`${styles.edit_btn}`} >
-                  EDITAR
+                  {t("pages.profile.edit")}
                 </Button>
               </div>
               <div className={`${styles.input_container} ${styles[theme]}`}>
@@ -181,10 +183,14 @@ function Profile() {
                 label={t('forms.password')}
                 className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
                     <Input
+                    type={showPassword ? 'text' : 'password'}
                     placeholder={t('forms.password')}
                     aria-label={t('forms.password')}
                     className={`${styles.input}`}
                     />
+                    <span className={styles.eye_btn} onClick={() => setShowPassword(!showPassword)} >
+                      {showPassword ? <AiFillEye/> : <AiFillEyeInvisible/>}
+                    </span>
                   </FloatingLabel>
               </div>
         </section>

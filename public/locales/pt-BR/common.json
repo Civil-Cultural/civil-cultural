@@ -61,7 +61,9 @@
       "message_info": "Escolha uma nova senha para ser redefinida"
     },
     "profile": {
-      "personal information": "Informações pessoais",
+      "edit": "Editar",
+      "profile": "Perfil",
+      "personal_information": "Informações pessoais",
       "localization": "Localização",
       "contacts": "Contatos",
       "account": "Conta"

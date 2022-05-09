@@ -60,7 +60,9 @@
       "message_info": "Elija una nueva contraseña para restablecer"
     },
     "profile": {
-      "personal information": "Informaciones personales",
+      "edit": "Editar",
+      "profile": "Perfil",
+      "personal_information": "Informaciones personales",
       "localization": "Localización",
       "contacts": "Contactos",
       "account": "Cuenta"

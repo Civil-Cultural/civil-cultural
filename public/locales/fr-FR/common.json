@@ -60,7 +60,9 @@
       "message_info": "Choisissez un nouveau mot de passe à réinitialiser"
     },
     "profile": {
-      "personal information": "Renseignements personnels",
+      "edit": "Éditer",
+      "profile": "Profil",
+      "personal_information": "Renseignements personnels",
       "localization": "Localisation",
       "contacts": "Contacts",
       "account": "Compte"

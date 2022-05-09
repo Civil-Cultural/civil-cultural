@@ -31,6 +31,11 @@
   margin-bottom: 1em;
 }
 
+.edit_btn {
+  height: 50px;
+  width: 70px;
+}
+
 .label {
   font-size: 1.4em;
   padding-top: 0.8em;
@@ -38,4 +43,10 @@
 
 .input {
   font-size: 0.8em;
+}
+
+.eye_btn {
+  position: absolute;
+  top: 1.5em;
+  right: 1px;
 }
