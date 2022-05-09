@@ -58,6 +58,12 @@
     "reset_password": {
       "title": "Redefine password",
       "message_info": "Choose a new password to be reset"
+    },
+    "profile": {
+      "personal_information": "Personal information",
+      "localization": "Localization",
+      "contacts": "Contacts",
+      "account": "Account"
     }
   }
 }

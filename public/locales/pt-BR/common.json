@@ -59,6 +59,12 @@
     "reset_password": {
       "title": "Redefinir senha",
       "message_info": "Escolha uma nova senha para ser redefinida"
+    },
+    "profile": {
+      "personal information": "Informações pessoais",
+      "localization": "Localização",
+      "contacts": "Contatos",
+      "account": "Conta"
     }
   }
 }

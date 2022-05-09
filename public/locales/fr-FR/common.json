@@ -58,6 +58,12 @@
     "reset_password": {
       "title": "Redéfinir le mot de passe",
       "message_info": "Choisissez un nouveau mot de passe à réinitialiser"
+    },
+    "profile": {
+      "personal information": "Renseignements personnels",
+      "localization": "Localisation",
+      "contacts": "Contacts",
+      "account": "Compte"
     }
   }
 }

@@ -58,6 +58,12 @@
     "reset_password": {
       "title": "Redefinir contraseña",
       "message_info": "Elija una nueva contraseña para restablecer"
+    },
+    "profile": {
+      "personal information": "Informaciones personales",
+      "localization": "Localización",
+      "contacts": "Contactos",
+      "account": "Cuenta"
     }
   }
 }

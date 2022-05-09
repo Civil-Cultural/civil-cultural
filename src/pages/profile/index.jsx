@@ -3,12 +3,12 @@ import { useTheme } from 'Hooks/useTheme'
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { FloatingLabel } from 'react-bootstrap'
 
 /* ----------- COMPONENTS ----------- */
 import { Layout } from 'utils/Layout'
 import MainLayout from 'Layouts/MainLayout'
 import Input from 'Components/Input'
-import { FloatingLabel } from 'react-bootstrap'
 import Button from 'Components/Button'
 
 /* ----------- ICONS ----------- */
@@ -22,133 +22,173 @@ function Profile() {
   const { t } = useTranslation();
 
   return (
-    <div className={`d-flex col-md row g-0 ${styles.body} ${styles[theme]}`}>
-        <section className={`col-md-4 ${styles.profile_container} ${styles[theme]}`}>
-          <div className={`border ${styles.profile_container_card}`}>
-            <div className={`d-flex justify-content-center ${styles.profile_container_img}`}>
-              <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvvPm9NjtkiWYuwmr0q33RHCaXLCLyGTWht77TOxwWj_opyyGPySxZ61s_rRyqus_3kcM&usqp=CAU"
-              alt="Sua imagem de perfil"
-              className={`rounded-3  ${styles.profile_img}`}
-              />
-            </div>
-            <div className={`d-flex justify-content-center ${styles.profile_container_name} ${styles[theme]}`}>
-              <FloatingLabel className={`${styles.profile_container_label} ${styles[theme]}`} 
-              label={t('forms.name')}>
-                <Input placeholder={t('forms.name')}
-                aria-label={t('forms.name')}
-                disabled={true}
-                className={`${styles.profile_name_input}`}
-                />
-              </FloatingLabel>
-            </div>
-            <div className={`d-flex justify-content-center ${styles.profile_container_location}`}>
-               <span className={styles.location_icon}><MdLocationPin/></span>
-               <FloatingLabel label={t('forms.country')} className={`${styles.profile_container_label} ${styles[theme]}`}>
-                  <Input placeholder={t('forms.country')}
-                  aria-label={t('forms.country')}
-                  disabled={true}
-                  className={`${styles.profile_location}`}
-                  />
-               </FloatingLabel>
-            </div> 
-            <div className={`d-flex justify-content-center ${styles.profile_container_location}`}>
-               <span className={styles.location_icon}><MdLocationPin/></span>
-               <FloatingLabel label={t('forms.state')} className={`${styles.profile_container_label} ${styles[theme]}`}>
-                  <Input placeholder={t('forms.state')}
-                  aria-label={t('forms.state')}
-                  disabled={true}
-                  className={`${styles.profile_location}`}
-                  />
-               </FloatingLabel>
-            </div>
-            <div className={`d-flex justify-content-center ${styles.profile_container_location}`}>
-              <span className={styles.location_icon}><MdLocationPin/></span>
-               <FloatingLabel className={`${styles.profile_container_label} ${styles[theme]}`} label={t('forms.city')}>
-                  <Input placeholder={t('forms.city')}
-                  aria-label={t('forms.city')}
-                  disabled={true}
-                  className={`${styles.profile_location}`}
-                  />
-               </FloatingLabel>
-            </div>
-            <Button type="button" className={`${styles.edit_btn}`} onClick={() => {setEditSection(!editSection)}}>
-              Editar
-            </Button>
-          </div>
+    <div className={`${styles.body} ${styles[theme]}`}>
+      <div className={`d-flex justify-content-center`}>
+        <div className={`col-12 col-lg-10 ${styles.header}`}>
+          <h1 className={`${styles.page_title}`}>Profile</h1>
+        </div>
+      </div>
+      <div className={`d-flex justify-content-center`}>
+        <section className={`col-12 col-lg-10 border border-secondary rounded-3 ${styles.section} ${styles[theme]}`}>
+              <div className={`d-flex justify-content-between ${styles.section_header} ${styles[theme]}`}>
+                <h2 className={`${styles.section_title}`}>{t("pages.profile.contacts")}</h2>
+                <Button type='button' className={`${styles.edit_btn}`} >
+                  EDITAR
+                </Button>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.name')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.name')}
+                    aria-label={t('forms.name')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.personal_identification')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.personal_identification')}
+                    aria-label={t('forms.personal_identification')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
         </section>
-        <section className={`col-md-8 container ${styles.infos_container} ${styles[theme]}`}>
-          <div className={`row justify-content-center ${styles[theme]}`}>
-            <div className={`col-md-8 ${styles.field}`}>
-              <FloatingLabel className={`${styles.field_label} ${styles[theme]}`} label='E-mail'>
-                <Input placeholder='E-mail'
-                aria-label='E-mail'
-                disabled={true}
-                className={styles.field_input}
-                />
-              </FloatingLabel>
-            </div>
-          </div>
-          <div className={`row justify-content-center ${styles[theme]}`}>
-            <div className={`col-md-8 ${styles.field}`}>
-              <FloatingLabel className={`${styles.field_label} ${styles[theme]}`} 
-              label={t('forms.phone_cell')}>
-                <Input placeholder={t('forms.phone_cell')}
-                aria-label={t('forms.phone_cell')}
-                disabled={true}
-                className={styles.field_input}
-                />
-              </FloatingLabel>
-            </div>
-          </div>
-          <div className={`row justify-content-center ${styles[theme]}`}>
-            <div className={`col-md-8 ${styles.field}`}>
-              <FloatingLabel className={`${styles.field_label} ${styles[theme]}`} 
-              label={t('forms.landline')}>
-                <Input placeholder={t('forms.landline')}
-                aria-label={t('forms.landline')}
-                disabled={true}
-                className={styles.field_input}
-                />
-              </FloatingLabel>
-            </div>
-          </div>
-          <div className={`row justify-content-center`}>
-            <div className={`col-md-8 ${styles.field}`}>
-              <FloatingLabel className={`${styles.field_label} ${styles[theme]}`} 
-              label={t('forms.personal_identification')}>
-                <Input placeholder={t('forms.personal_identification')}
-                aria-label={t('forms.personal_identification')}
-                disabled={true}
-                className={styles.field_input}
-                />
-              </FloatingLabel>
-            </div>
-          </div>
-          <div className={`row justify-content-center`}>
-            <div className={`col-md-8 ${styles.field}`}>
-              <FloatingLabel className={`${styles.field_label} ${styles[theme]}`} label='CEP'>
-                <Input placeholder='CEP'
-                aria-label='CEP'
-                disabled={true}
-                className={styles.field_input}
-                />
-              </FloatingLabel>
-            </div>
-          </div>
-          <div className={`row justify-content-center`}>
-            <div className={`col-md-8 ${styles.field}`}>
-              <FloatingLabel className={`${styles.field_label} ${styles[theme]}`} 
-              label={t('forms.address')}>
-                <Input placeholder={t('forms.address')}
-                aria-label={t('forms.address')}
-                disabled={true}
-                className={styles.field_input}
-                />
-              </FloatingLabel>
-            </div>
-          </div>
+      </div>
+      <div className={`d-flex justify-content-center`}>
+        <section className={`col-12 col-lg-10 border border-secondary rounded-3 ${styles.section} ${styles[theme]}`}>
+              <div className={`d-flex justify-content-between ${styles.section_header} ${styles[theme]}`}>
+                <h2 className={`${styles.section_title}`}>Localizaçao</h2>
+                <Button type='button' className={`${styles.edit_btn}`}>
+                  EDITAR
+                </Button>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.country')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.country')}
+                    aria-label={t('forms.country')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.state')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.state')}
+                    aria-label={t('forms.state')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.city')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.city')}
+                    aria-label={t('forms.city')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.address')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.address')}
+                    aria-label={t('forms.address')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label='CEP'
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder='CEP'
+                    aria-label='CEP'
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
         </section>
+      </div>
+      <div className={`d-flex justify-content-center`}>
+        <section className={`col-12 col-lg-10 border border-secondary rounded-3 ${styles.section} ${styles[theme]}`}>
+              <div className={`d-flex justify-content-between ${styles.section_header} ${styles[theme]}`}>
+                <h2 className={`${styles.section_title}`}>Contatos</h2>
+                <Button type='button' className={`${styles.edit_btn}`} >
+                  EDITAR
+                </Button>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.landline')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.landline')}
+                    aria-label={t('forms.landline')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.phone_cell')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.phone_cell')}
+                    aria-label={t('forms.phone_cell')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+        </section>
+      </div>
+      <div className={`d-flex justify-content-center`}>
+        <section className={`col-12 col-lg-10 border border-secondary rounded-3 ${styles.section} ${styles[theme]}`}>
+              <div className={`d-flex justify-content-between ${styles.section_header} ${styles[theme]}`}>
+                <h2 className={`${styles.section_title}`}>Conta</h2>
+                <Button type='button' className={`${styles.edit_btn}`} >
+                  EDITAR
+                </Button>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label='E-mail'
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder='E-mail'
+                    aria-label='E-mail'
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+              <div className={`${styles.input_container} ${styles[theme]}`}>
+                <FloatingLabel 
+                label={t('forms.password')}
+                className={`col-lg-10 col-12 ${styles.label} ${styles[theme]}`}>
+                    <Input
+                    placeholder={t('forms.password')}
+                    aria-label={t('forms.password')}
+                    className={`${styles.input}`}
+                    />
+                  </FloatingLabel>
+              </div>
+        </section>
+      </div>
     </div>
   )
 }

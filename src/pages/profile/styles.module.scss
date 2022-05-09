@@ -1,95 +1,41 @@
 .body {
-  padding: 0 !important;
-
   &.light {
     background-color: var(--light);
-  }
-
-  &.dark {
-    background-color: var(--dark);
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  .body {
-    margin-left: 1em;
-  }
-}
-
-// ------------------------------------------- CARD ------------------------------------------
-.profile_container {
-  padding: 1.3em;
-}
-
-.profile_container_card {
-  height: 100%;
-  background-color: var(--gray-200);
-  border-radius: 10px;
-  padding: 2em;
-}
-
-.profile_container_img {
-  margin-bottom: 2em;
-}
-
-.profile_container_name {
-  margin-bottom: 0.5em;
-}
-
-.profile_name_input {
-  margin-bottom: 4em;
-  font-size: 0.8em;
-}
-
-.profile_container_location {
-  margin-bottom: 1.5em;
-}
-
-.profile_container_label {
-  width: 100%;
-  font-size: 1.7em;
-  padding-top: 0.8em;
-}
-
-.profile_location {
-  width: 100%;
-  font-size: 0.8em;
-}
-
-.location_icon {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.edit_btn {
-  width: 100%;
-  margin-top: 10px;
-}
-
-// ------------------------------------ MAIN SIDE ----------------------------------------
-
-.infos_container {
-  padding: 0 1.6rem;
-  margin-top: 1.4rem;
-}
-
-.field {
-  margin-bottom: 3em;
-}
-
-.field_label {
-  font-size: 1.4em;
-  padding-top: 1em;
-
-  &.light {
     color: var(--gray-500);
   }
 
   &.dark {
+    background-color: var(--dark);
     color: var(--gray-50);
   }
 }
 
-.field_input {
+.header {
+  margin-bottom: 1em;
+}
+
+.page_title {
+  font-size: 5em;
+}
+
+.section {
+  margin-bottom: 2.5em;
+  padding: 1em;
+}
+
+.section_title {
+  font-size: 3em;
+}
+
+.input_container {
+  margin-bottom: 1em;
+}
+
+.label {
+  font-size: 1.4em;
+  padding-top: 0.8em;
+}
+
+.input {
   font-size: 0.8em;
 }
