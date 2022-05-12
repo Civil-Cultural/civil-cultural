@@ -1,4 +1,6 @@
-.body {
+.container_profile {
+  padding: 1rem 0;
+
   &.light {
     background-color: var(--light);
     color: var(--gray-500);
@@ -24,7 +26,8 @@
 }
 
 .section_title {
-  font-size: 3em;
+  font-size: 1.5em;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .input_container {
@@ -32,17 +35,25 @@
 }
 
 .edit_btn {
-  height: 50px;
+  height: auto;
+  padding: 0.2rem;
   width: 70px;
+  border-radius: 1.5rem;
 }
 
 .label {
-  font-size: 1.4em;
-  padding-top: 0.8em;
+  font-size: 1em;
+  padding-top: 0.2em;
+
+  left: -2px;
 }
 
 .input {
   font-size: 0.8em;
+
+  &:disabled {
+    border-bottom: none;
+  }
 }
 
 .eye_btn {
