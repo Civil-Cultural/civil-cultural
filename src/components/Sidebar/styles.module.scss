@@ -1,14 +1,11 @@
-
-@import 'styles/utils';
+@import "styles/utils";
 /* ----------- MEDIAS QUERYs ----------- */
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 220px) and (max-width: 992px) {
   .sidebar_container {
     width: 100%;
     min-height: 100vh;
-    transition:
-      opacity 0.2s ease-in-out,
-      width 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out;
 
     &.show {
       position: sticky !important;
@@ -29,7 +26,7 @@
 /* @media (min-width: 768px) {
 }
  */
- 
+
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .sidebar_container {
@@ -169,17 +166,62 @@
 
   font-weight: 600;
   font-size: 1.7rem;
-  padding: 0.5rem 0.5rem;
   border-radius: 5px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem;
 
-  &.light,
-  &.light .button_action {
-    color: var(--gray-600);
+  &.light {
+    & .button_action,
+    & .nav_item,
+    & .nav_item svg {
+      color: var(--gray-600);
+    }
   }
 
-  &.dark,
-  &.dark .button_action {
-    color: var(--gray-100);
+  &.dark {
+    & .button_action,
+    & .nav_item,
+    & .nav_item svg {
+      color: var(--gray-100);
+    }
+  }
+}
+
+.item_footer_nav {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+
+  &.light {
+    & .button_action,
+    & .nav_item,
+    & .nav_item svg {
+      color: var(--gray-600);
+    }
+  }
+
+  &.dark {
+    & .button_action,
+    & .nav_item,
+    & .nav_item svg {
+      color: var(--gray-100);
+    }
+  }
+
+  &.active_link {
+    background: #a0c8ff50;
+  }
+
+  & .nav_item {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

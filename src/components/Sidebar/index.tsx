@@ -3,20 +3,16 @@ import { useState } from "react";
 import { useTheme } from "Hooks/useTheme";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { linksMenu } from "Utils/LinksMenu";
 
 /* ----------- ICONS ----------- */
-import { IoHome, IoNewspaperSharp } from "react-icons/io5";
 import { BiLogOutCircle, BiLogInCircle } from "react-icons/bi";
-import {
-  MdOutlineArticle,
-  MdOutlineLightMode,
-  MdDarkMode,
-} from "react-icons/md";
+import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
+import { BsGear } from "react-icons/bs";
 
 /* ----------- COMPONENTS ----------- */
 import Switch from "Components/Switch";
 import NextLink from "next/link";
-import Logo from "Components/Logo";
 import { Col, Nav } from "react-bootstrap";
 
 /* ----------- STYLES ----------- */
@@ -33,24 +29,6 @@ export default function Sidebar({ active, handleClose }: SidebarState) {
   const { t } = useTranslation();
   const router = useRouter();
 
-  const links = [
-    {
-      text: "Inicio",
-      href: "/",
-      Icon: IoHome,
-    },
-    {
-      text: "Notícias",
-      href: "/#",
-      Icon: IoNewspaperSharp,
-    },
-    {
-      text: "Artigos",
-      href: "/#",
-      Icon: MdOutlineArticle,
-    },
-  ];
-
   return (
     <Col
       className={`${styles.sidebar_container} ${styles[theme]} d-flex  ${
@@ -61,17 +39,15 @@ export default function Sidebar({ active, handleClose }: SidebarState) {
         className={`${styles.sidebar_body} ${styles[theme]} flex-grow-1 col-auto`}
       >
         <Nav className="d-flex flex-column mt-4 gap-1">
-          {links.map(({ href, text, Icon }, i) => (
+          {linksMenu.map(({ href, title, Icon }, i) => (
             <NextLink href={href} key={i}>
               <Nav.Link
                 href={href}
                 className={`${styles.nav_item} ${
-                  router.asPath === href
-                    ? styles.active_link
-                    : styles.inactive_link
+                  router.asPath === href ? styles.active_link : ""
                 }`}
               >
-                {Icon && <Icon className="me-2" />} <span>{text}</span>
+                {Icon && <Icon className="me-2" />} <span>{title}</span>
               </Nav.Link>
             </NextLink>
           ))}
@@ -79,6 +55,18 @@ export default function Sidebar({ active, handleClose }: SidebarState) {
       </Col>
 
       <Col className={`${styles.sidebar_footer} col-auto`}>
+        <Col
+          className={`${styles.item_footer_nav} ${styles[theme]} ${
+            router.asPath === "/profile" ? styles.active_link : ""
+          } mb-2`}
+        >
+          <NextLink href="/profile">
+            <Nav.Link href="/profile" className={`${styles.nav_item}`}>
+              <BsGear className="me-2" />
+            </Nav.Link>
+          </NextLink>
+        </Col>
+
         <Col
           className={`${styles.item_footer} ${styles[theme]} mb-2`}
           onClick={() => setLogin((x) => !x)}

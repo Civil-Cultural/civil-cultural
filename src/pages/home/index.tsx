@@ -87,7 +87,7 @@ function CardTopicsLoad() {
 
 let titleHome: string = "";
 
-const Home = () => {
+function Home() {
   const { theme } = useTheme();
   const { t } = useTranslation();
   const cardTest = Array(4).fill("teste");
