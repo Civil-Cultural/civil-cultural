@@ -30,83 +30,90 @@ export default function Sidebar({ active, handleClose }: SidebarState) {
   const router = useRouter();
 
   return (
-    <Col
-      className={`${styles.sidebar_container} ${styles[theme]} d-flex  ${
-        active ? styles.show : styles.hidden
-      }`}
-    >
       <Col
-        className={`${styles.sidebar_body} ${styles[theme]} flex-grow-1 col-auto`}
+          className={`${styles.sidebar_container} ${styles[theme]} d-flex  ${
+              active ? styles.show : styles.hidden
+          }`}
       >
-        <Nav className="d-flex flex-column mt-4 gap-1">
-          {linksMenu.map(({ href, title, Icon }, i) => (
-            <NextLink href={href} key={i}>
-              <Nav.Link
-                href={href}
-                className={`${styles.nav_item} ${
-                  router.asPath === href ? styles.active_link : ""
-                }`}
+          <Col
+              className={`${styles.sidebar_body} ${styles[theme]} flex-grow-1 col-auto`}
+          >
+              <Nav className="d-flex flex-column mt-4 gap-1">
+                  {linksMenu.map(({ href, title, Icon }, i) => (
+                      <NextLink href={href} key={i}>
+                          <Nav.Link
+                              href={href}
+                              className={`${styles.nav_item} ${
+                                  router.asPath === href
+                                      ? styles.active_link
+                                      : ""
+                              }`}
+                          >
+                              {Icon && <Icon className="me-2" />}{" "}
+                              <span>{title}</span>
+                          </Nav.Link>
+                      </NextLink>
+                  ))}
+              </Nav>
+          </Col>
+
+          <Col className={`${styles.sidebar_footer} col-auto`}>
+              <Col
+                  className={`${styles.item_footer_nav} ${styles[theme]} ${
+                      router.asPath === "/profile" ? styles.active_link : ""
+                  } mb-2`}
               >
-                {Icon && <Icon className="me-2" />} <span>{title}</span>
-              </Nav.Link>
-            </NextLink>
-          ))}
-        </Nav>
+                  <NextLink href="/profile">
+                      <Nav.Link
+                          href="/profile"
+                          className={`${styles.nav_item}`}
+                      >
+                          <BsGear className="me-2" />
+                          <span className="m-0">Logout</span>
+                      </Nav.Link>
+                  </NextLink>
+              </Col>
+
+              <Col
+                  className={`${styles.action_account} ${styles[theme]} mb-2`}
+                  onClick={() => setLogin((x) => !x)}
+              >
+                  {login ? (
+                      <button
+                          className={`${styles.button_action} w-100 h-100 btn remove-bg-image remove-focus border-0`}
+                      >
+                          <BiLogOutCircle />
+                          <span className="m-0">Logout</span>
+                      </button>
+                  ) : (
+                      <button
+                          className={`${styles.button_action} w-100 h-100 btn remove-bg-image remove-focus border-0`}
+                      >
+                          <BiLogInCircle />
+                          <span className="m-0">Login</span>
+                      </button>
+                  )}
+              </Col>
+
+              <Col
+                  className={`${styles.item_footer} ${styles.theme_mode} ${styles[theme]} d-none d-lg-block`}
+              >
+                  <span className={styles.mode_info}>
+                      {theme == "light" ? (
+                          <>
+                              <MdOutlineLightMode />
+                              <span>Light</span>
+                          </>
+                      ) : (
+                          <>
+                              <MdDarkMode />
+                              <span>Dark</span>
+                          </>
+                      )}
+                  </span>
+                  <Switch className={active ? "ms-2" : ""} />
+              </Col>
+          </Col>
       </Col>
-
-      <Col className={`${styles.sidebar_footer} col-auto`}>
-        <Col
-          className={`${styles.item_footer_nav} ${styles[theme]} ${
-            router.asPath === "/profile" ? styles.active_link : ""
-          } mb-2`}
-        >
-          <NextLink href="/profile">
-            <Nav.Link href="/profile" className={`${styles.nav_item}`}>
-              <BsGear className="me-2" />
-            </Nav.Link>
-          </NextLink>
-        </Col>
-
-        <Col
-          className={`${styles.item_footer} ${styles[theme]} mb-2`}
-          onClick={() => setLogin((x) => !x)}
-        >
-          {login ? (
-            <button
-              className={`${styles.button_action} w-100 h-100 btn remove-bg-image remove-focus border-0`}
-            >
-              <BiLogOutCircle />
-              <span className="m-0">Logout</span>
-            </button>
-          ) : (
-            <button
-              className={`${styles.button_action} w-100 h-100 btn remove-bg-image remove-focus border-0`}
-            >
-              <BiLogInCircle />
-              <span className="m-0">Login</span>
-            </button>
-          )}
-        </Col>
-
-        <Col
-          className={`${styles.item_footer} ${styles.theme_mode} ${styles[theme]} d-none d-lg-block`}
-        >
-          <span className={styles.mode_info}>
-            {theme == "light" ? (
-              <>
-                <MdOutlineLightMode />
-                <span>Light</span>
-              </>
-            ) : (
-              <>
-                <MdDarkMode />
-                <span>Dark</span>
-              </>
-            )}
-          </span>
-          <Switch className={active ? "ms-2" : ""} />
-        </Col>
-      </Col>
-    </Col>
   );
 }

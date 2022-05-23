@@ -37,7 +37,7 @@
 
 /* ------------ LOGO ------------ */
 .logo_title {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   letter-spacing: 0.1rem;
   line-height: 0.7em;
@@ -54,11 +54,12 @@
 }
 
 /* ------------ DROPDOWN ------------ */
-.dropdownMenuContainer {
+.dropdown_menu_container {
   padding: 0.2rem;
+  position: relative;
 }
 
-.dropdownButton {
+.dropdown_button {
   font-size: 0.95rem;
   font-weight: 600;
   text-align: center;
@@ -91,8 +92,8 @@
   border-radius: 0.8rem;
 
   position: absolute;
-  top: 95%;
-  right: 10.5%;
+  top: 50px;
+  right: -65px;
   z-index: 900;
 
   opacity: 0;

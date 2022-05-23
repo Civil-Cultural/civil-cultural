@@ -51,38 +51,39 @@ export function DropdownMenu() {
     { language: t('french'), location: 'fr-FR' },
   ]
 
-  const LanguagesMemoized = languages.map(({ language, location }, index) => (
-    <span
-      className={`${styles.option} ${styles[theme]}`}
-      key={index}
-      onClick={() => changeLanguage(location)}
-    >
-      {language}
-    </span>
-  ))
+  const languagesOptions = languages.map(({ language, location }, index) => (
+      <span
+          className={`${styles.option} ${styles[theme]}`}
+          key={index}
+          onClick={() => changeLanguage(location)}
+      >
+          {language}
+      </span>
+  ));
 
 
   return (
-    <>
-      <div className={styles.dropdownMenuContainer}>
-        <Button
-          className={`${styles.dropdownButton} ${styles[theme]} remove-focus`}
-          ref={buttonRef}
-          onClick={() => setIsActive(!isActive)}
-        >
-          {
-            languages
-              .filter(({ location }) => location === locale)[0]
-              .language
-          }
-        </Button>
+      <>
+          <div className={styles.dropdown_menu_container}>
+              <Button
+                  className={`${styles.dropdown_button} ${styles[theme]} remove-focus`}
+                  ref={buttonRef}
+                  onClick={() => setIsActive(!isActive)}
+              >
+                  {
+                      languages.filter(({ location }) => location === locale)[0]
+                          .language
+                  }
+              </Button>
 
-        <div className={`${styles.dropdown} ${styles[theme]} ${isActive ? styles.active : ''}`} >
-          <div className={styles.select}>
-            {LanguagesMemoized}
+              <div
+                  className={`${styles.dropdown} ${styles[theme]} ${
+                      isActive ? styles.active : ""
+                  }`}
+              >
+                  <div className={styles.select}>{languagesOptions}</div>
+              </div>
           </div>
-        </div>
-      </div>
-    </>
-  )
+      </>
+  );
 }
