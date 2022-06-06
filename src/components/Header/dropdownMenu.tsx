@@ -70,17 +70,10 @@ export function DropdownMenu() {
                   ref={buttonRef}
                   onClick={() => setIsActive(!isActive)}
               >
-                  {
-                      languages.filter(({ location }) => location === locale)[0]
-                          .language
-                  }
+                  {languages.find(({ location }) => location === locale)?.language}
               </Button>
 
-              <div
-                  className={`${styles.dropdown} ${styles[theme]} ${
-                      isActive ? styles.active : ""
-                  }`}
-              >
+              <div className={`${styles.dropdown} ${styles[theme]} ${isActive ? styles.active : ""}`}>
                   <div className={styles.select}>{languagesOptions}</div>
               </div>
           </div>

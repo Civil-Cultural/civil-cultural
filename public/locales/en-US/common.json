@@ -30,10 +30,12 @@
   },
   "components": {
     "sidebar": {
-      "close": "Close",
-      "topic": "Topic",
-      "article": "Article",
-      "news": "News"
+        "close": "Close",
+        "topic": "Topic",
+        "article": "Article",
+        "news": "News",
+        "create_publication": "Create Publication",
+        "configuration": "Configuration"
     }
   },
   "pages": {

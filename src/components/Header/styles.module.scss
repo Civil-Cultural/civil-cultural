@@ -149,8 +149,15 @@
     background-color: var(--gray-600);
   }
 
+  &:first-child {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+
   &:last-child {
     border-bottom: 0;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
   }
 }
 /** ----------------------------- */

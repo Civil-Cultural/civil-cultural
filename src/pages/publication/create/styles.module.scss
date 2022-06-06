@@ -1,0 +1,11 @@
+
+.container_form {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 0.4rem;
+
+    & .label {
+        font-size: 1rem;
+    }
+}

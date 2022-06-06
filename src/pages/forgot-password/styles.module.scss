@@ -51,24 +51,6 @@
   }
 }
 
-.float_label {
-  font-size: 0.94em;
-
-  &.light {
-    color: var(--gray-600);
-  }
-
-  &.dark {
-    color: var(--gray-200);
-  }
-
-  & > label {
-    bottom: -0.8rem;
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
-  }
-}
-
 .instruction {
   font-size: 14px;
 

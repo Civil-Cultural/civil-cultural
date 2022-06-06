@@ -22,10 +22,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const [user, setUser] = useState<UserAuth | null>(null)
     const isAuthenticated = !!user
 
-    useEffect(() => {
-        
-    }, [])
-
     const signIn = async ({ userOrEmail , password }: UserLignIn) => {
         const uri = process.env.NEXT_PUBLIC_URL_API
         const axios = await useApi()

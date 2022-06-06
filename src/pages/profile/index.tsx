@@ -325,7 +325,7 @@ function Profile() {
 }
 
 export default Layout(Profile, MainLayout, {
-  title: "Perfil de Usúario",
+    title: "Profile",
 });
 
 export async function getStaticProps({ locale }) {

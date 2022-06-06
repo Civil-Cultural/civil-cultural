@@ -29,24 +29,6 @@
     background-image: radial-gradient(#0db958 36%, #234d4c);
 }
 
-.float_label {
-    font-size: 0.94em;
-
-    &.light {
-        color: var(--gray-600);
-    }
-
-    &.dark {
-        color: var(--gray-200);
-    }
-
-    & > label {
-        bottom: -0.8rem;
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
-    }
-}
-
 .form_link {
     font-size: 0.86em;
     font-weight: 500;

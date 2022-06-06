@@ -1,193 +1,194 @@
 .search_container {
-  background-color: transparent;
-  width: 100%;
-  
-  &,
-  & div {
-    border-radius: 0.5rem 0 0 0.5em; 
-  }
+    background-color: transparent;
+    width: 100%;
+    overflow: hidden;
 
+    &,
+    & div {
+        border-radius: 0.5rem 0 0 0.5em !important;
+    }
 }
 
 .box_icon {
-  padding: 0.2rem;
+    padding: 0.2rem;
 }
 
 .search {
-  padding: 0 0.85rem;
-  border-radius: 0.5rem 0 0 0.5em !important;
-  border: 0px;
-  font-size: 1.1rem;
+    padding: 0 0.85rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border: 0px;
+    font-size: 1.1rem;
 
-  &.light,
-  &.light:focus,
-  &.light::placeholder {
-    color: var(--gray-700);
-    background-color: var(--gray-200);
-  }
+    &.light,
+    &.light:focus,
+    &.light::placeholder {
+        color: var(--gray-700);
+        background-color: var(--gray-200);
+    }
 
-  &.dark,
-  &.dark:focus,
-  &.dark::placeholder {
-    color: var(--gray-50);
-    background-color: var(--gray-300);
-  }
+    &.dark,
+    &.dark:focus,
+    &.dark::placeholder {
+        color: var(--gray-50);
+        background-color: var(--gray-300);
+    }
 
-  &::placeholder {
-    font-weight: 600;
-    font-size: 1rem;
-  }
+    &::placeholder {
+        font-weight: 600;
+        font-size: 1rem;
+    }
 }
 
 .input_group_text {
-  border: 0;
-  padding: 0;
+    border: 0;
+    padding: 0;
 
-  &.light {
-    background-color: var(--gray-200);
-  }
-
-  &.dark {
-    background-color: var(--gray-300);
-  }
-
-  &:nth-child(2n) {
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
-}
-
-.button_search {
-  height: 100%;
-  background-color: var(--blue-500);
-  padding: 0.7rem 1.2rem;
-  border-radius: 0 0.5rem 0.5rem 0;
-  border: 0;
-}
-
-.icon_search {
-  font-size: 1.5rem;
-  vertical-align: middle;
-
-  &.iconMenuSearch {
     &.light {
-      color: var(--gray-700);
+        background-color: var(--gray-200);
     }
 
     &.dark {
-      color: var(--gray-100);
+        background-color: var(--gray-300);
     }
-  }
+
+    &:nth-child(2n) {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+}
+
+.button_search {
+    height: 100%;
+    background-color: var(--blue-500);
+    padding: 0.7rem 1.2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: 0;
+}
+
+.icon_search {
+    font-size: 1.5rem;
+    vertical-align: middle;
+
+    &.iconMenuSearch {
+        &.light {
+            color: var(--gray-700);
+        }
+
+        &.dark {
+            color: var(--gray-100);
+        }
+    }
 }
 
 .button_clear {
-  background-color: transparent !important;
+    background-color: transparent !important;
 
-  &:hover {
-    background-image: none;
-  }
+    &:hover {
+        background-image: none;
+    }
 }
 
 .button_audio {
-  padding: 0 0.5rem;
-  background-color: transparent !important;
+    padding: 0 0.5rem;
+    background-color: transparent !important;
 
-  &:hover {
-    background-image: none;
-  }
+    &:hover {
+        background-image: none;
+    }
 }
 
 @keyframes fadeIn {
-  from {
-    color: var(--gray-500);
-    opacity: 0.6;
-  }
+    from {
+        color: var(--gray-500);
+        opacity: 0.6;
+    }
 
-  to {
-    color: var(--green-600);
-    opacity: 1;
-  }
+    to {
+        color: var(--green-600);
+        opacity: 1;
+    }
 }
 
 .icon_audio {
-  font-size: 1.5rem;
-  vertical-align: middle;
-  transition: color 0.3s ease-out;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    transition: color 0.3s ease-out;
 
-  &.light {
-    color: var(--gray-700);
-  }
+    &.light {
+        color: var(--gray-700);
+    }
 
-  &.dark {
-    color: var(--gray-100);
-  }
+    &.dark {
+        color: var(--gray-100);
+    }
 
-  &:hover {
-    color: #729bd3;
-  }
+    &:hover {
+        color: #729bd3;
+    }
 
-  &.listening {
-    animation: fadeIn 1.4s cubic-bezier(0.67, -0.18, 0.16, 1.06) infinite;
-  }
+    &.listening {
+        animation: fadeIn 1.4s cubic-bezier(0.67, -0.18, 0.16, 1.06) infinite;
+    }
 }
 
 .icon_clear {
-  font-size: 1.5rem;
-  vertical-align: middle;
-  transition: color 0.3s ease-out;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    transition: color 0.3s ease-out;
 
-  &.light {
-    color: var(--gray-700);
-  }
+    &.light {
+        color: var(--gray-700);
+    }
 
-  &.dark {
-    color: var(--gray-100);
-  }
+    &.dark {
+        color: var(--gray-100);
+    }
 
-  &:hover {
-    color: #f45d4e;
-  }
+    &:hover {
+        color: #f45d4e;
+    }
 }
 
 /* ---------- Popover ---------- */
 
 .popover_container {
-  border: transparent;
-  border-radius: 10px;
+    border: transparent;
+    border-radius: 10px;
 
-  &.light {
-    background: linear-gradient(5deg, rgba(253, 253, 253, 0.8), rgba(245, 245, 245, 0.8));
-  }
+    &.light {
+        background: linear-gradient(5deg, rgba(253, 253, 253, 0.8), rgba(245, 245, 245, 0.8));
+    }
 
-  &.dark {
-    background: linear-gradient(5deg, rgba(79, 82, 101, 0.8), rgba(95, 99, 114, 0.8));
-  }
+    &.dark {
+        background: linear-gradient(5deg, rgba(79, 82, 101, 0.8), rgba(95, 99, 114, 0.8));
+    }
 
-  &.light > .popover-arrow::after {
-    border-bottom-color: #fdfdfd;
-  }
+    &.light > .popover-arrow::after {
+        border-bottom-color: #fdfdfd;
+    }
 
-  &.dark > .popover-arrow::after {
-    border-bottom-color: #4f526590;
-  }
+    &.dark > .popover-arrow::after {
+        border-bottom-color: #4f526590;
+    }
 }
 
 .popover_body {
-  padding: 0.7rem;
-  border: 1px solid #96969620;
-  border-radius: 10px;
+    padding: 0.7rem;
+    border: 1px solid #96969620;
+    border-radius: 10px;
 
-  &.light {
-    color: var(--gray-500);
-    background: linear-gradient(5deg, rgba(253, 253, 253, 0.8), rgba(245, 245, 245, 0.8));
-  }
+    &.light {
+        color: var(--gray-500);
+        background: linear-gradient(5deg, rgba(253, 253, 253, 0.8), rgba(245, 245, 245, 0.8));
+    }
 
-  &.dark {
-    color: var(--gray-50);
-    background: linear-gradient(5deg, rgba(79, 82, 101, 0.8), rgba(95, 99, 114, 0.8));
-  }
+    &.dark {
+        color: var(--gray-50);
+        background: linear-gradient(5deg, rgba(79, 82, 101, 0.8), rgba(95, 99, 114, 0.8));
+    }
 }
 
 .popover_title {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 /* --------------------------------- */

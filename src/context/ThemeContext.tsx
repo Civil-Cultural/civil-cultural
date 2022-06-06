@@ -19,7 +19,6 @@ export function CustomThemeProvider({ children }: CustomThemeProviderProps) {
 
   useEffect(() => {
     setTheme(cookieTheme as ThemeStateProps);
-    console.log(cookieTheme, theme);
   }, []);
 
   const toggleTheme = (themeType: ThemeStateProps) => {
