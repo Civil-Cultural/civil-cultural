@@ -1,0 +1,84 @@
+{
+  "portuguese": "Portuguese",
+  "english": "English",
+  "spanish": "Español",
+  "arabic": "Árabe",
+  "french": "Francés",
+  "italian": "Italian",
+  "albanian": "Albanés",
+  "catalán": "Catalán",
+  "croatian": "Croata",
+  "czech": "Checo",
+  "Danish": "Danés",
+  "German": "Alemán",
+  "Greek": "Griego",
+  "Japanese": "Japonés",
+  "Korean": "Coreano",
+    "error": {
+      "error": "Chyba"
+    },
+    "forms": {
+      "password": "Heslo",
+      "name": "Název",
+      "password_confirmation": "Potvrďte heslo",
+      "phone_cell": "Buňka",
+      "landline": "Pevná linka",
+      "personal_identification": "Osobní identifikace",
+      "country": "Země",
+      "state": "Stát",
+      "city": "Město",
+      "address": "Adresa",
+      "number": "Číslo",
+      "message_error": {
+        "required": ":FIELD povinné",
+        "email": "Neplatný e-mail",
+        "password_confirmation": "Odlišná hesla",
+        "number": "Zadejte prosím pouze číslo",
+        "max": "Maximum :NUM znaky",
+        "type": "Zadejte prosím pouze písmena"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "Zavřít",
+          "topic": "Témata",
+          "article": "články",
+          "news": "Zprávy",
+          "create_publication": "Vytvořit publikaci",
+          "configuration": "Nastavení"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Home",
+        "popover_message": "Tento prohlížeč nepodporuje rozpoznávání řeči",
+        "menu_publication": "Nejnovější publikace",
+        "menu_category": "Publikace podle kategorií"
+      },
+      "login": {
+        "nick_or_email": "Jméno nebo email",
+        "forgot_password": "Zapomenuté heslo?",
+        "create_account": "Vytvořit účet"
+      },
+      "register": {
+        "title": "Registrovat",
+        "link_login": "Přihlásit se"
+      },
+      "forgot_password": {
+        "title": "Zapomenuté heslo",
+        "message_info": "Zapomenuté heslo"
+      },
+      "reset_password": {
+        "title": "Předefinujte heslo",
+        "message_info": "Vyberte nové heslo, které chcete resetovat"
+      },
+      "profile": {
+        "edit": "Upravovat",
+        "personal_information": "Osobní informace",
+        "localization": "Umístění",
+        "contacts": "Kontakty",
+        "account": "Účet"
+      }
+    }
+  }
+  

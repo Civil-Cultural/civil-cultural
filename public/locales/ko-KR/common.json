@@ -1,0 +1,82 @@
+{
+  "portuguese": "Portuguese",
+  "english": "English",
+  "spanish": "Español",
+  "arabic": "Árabe",
+  "french": "Francés",
+  "italian": "Italian",
+  "albanian": "Albanés",
+  "catalán": "Catalán",
+  "croatian": "Croata",
+  "czech": "Checo",
+  "Danish": "Danés",
+  "German": "Alemán",
+  "Greek": "Griego",
+  "Japanese": "Japonés",
+  "Korean": "Coreano",
+    "error": {
+      "error": "실수"
+    },
+    "forms": {
+      "password": "비밀번호",
+      "name": "이름",
+      "password_confirmation": "비밀번호 확인",
+      "phone_cell": "휴대전화",
+      "landline": "유선전화",
+      "personal_identification": "개인 식별",
+      "country": "국가",
+      "state": "상태",
+      "city": "도시",
+      "address": "주소",
+      "number": "숫자",
+      "message_error": {
+        "required": "필수 필드",
+        "email": "잘못된 이메일",
+        "password_confirmation": "다양한 암호",
+        "number": "숫자만 입력하세요",
+        "max": "최대 문자 수",
+        "type": "글자만 입력해주세요"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "닫기",
+          "topic": "주제",
+          "article": "기사",
+          "news": "소식",
+          "create_publication": "게시물 작성",
+          "configuration": "환경"
+      }
+    },
+    "pages": {
+      "home": {
+        "popover_message": "이 브라우저는 음성 인식을 지원하지 않습니다.",
+        "menu_publication": "최근 게시물",
+        "menu_category": "카테고리별 게시물"
+      },
+      "login": {
+        "nick_or_email": "닉네임 또는 이메일",
+        "forgot_password": "비밀번호를 잊어버렸어요 ?",
+        "create_account": "계정 만들기"
+      },
+      "register": {
+        "title": "기록",
+        "link_login": "로그인"
+      },
+      "forgot_password": {
+        "title": "비밀번호를 잊어버리셨나요?",
+        "message_info": "이메일로 비밀번호 변경 링크를 받게 됩니다."
+      },
+      "reset_password": {
+        "title": "암호를 재설정",
+        "message_info": "재설정할 새 비밀번호를 선택하세요."
+      },
+      "profile": {
+        "edit": "편집하다",
+        "personal_information": "개인 정보",
+        "localization": "위치",
+        "contacts": "콘택트 렌즈",
+        "account": "계산서"
+      }
+    }
+  }

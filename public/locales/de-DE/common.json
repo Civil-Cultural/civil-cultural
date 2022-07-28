@@ -1,0 +1,84 @@
+{
+  "portuguese": "Portuguese",
+  "english": "English",
+  "spanish": "Español",
+  "arabic": "Árabe",
+  "french": "Francés",
+  "italian": "Italian",
+  "albanian": "Albanés",
+  "catalán": "Catalán",
+  "croatian": "Croata",
+  "czech": "Checo",
+  "Danish": "Danés",
+  "German": "Alemán",
+  "Greek": "Griego",
+  "Japanese": "Japonés",
+  "Korean": "Coreano",
+    "error": {
+      "error": "Fehler"
+    },
+    "forms": {
+      "password": "Passwort",
+      "name": "Name",
+      "password_confirmation": "Bestätigen Sie das Passwort",
+      "phone_cell": "Zelle",
+      "landline": "Festnetz",
+      "personal_identification": "Personalausweis",
+      "country": "Land",
+      "state": "Zustand",
+      "city": "Stadt",
+      "address": "Adresse",
+      "number": "Nummer",
+      "message_error": {
+        "required": ":FIELD obligatorisch",
+        "email": "Ungültige e-mail",
+        "password_confirmation": "Abweichende passwörter",
+        "number": "Bitte nur nummer eingeben",
+        "max": "Maximal :NUM Zeichen",
+        "type": "Bitte nur Buchstaben eingeben"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "Nah dran",
+          "topic": "Themen",
+          "article": "Artikel",
+          "news": "Nachrichten",
+          "create_publication": "Veröffentlichung erstellen",
+          "configuration": "Die einstellungen"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Home",
+        "popover_message": "Dieser Browser unterstützt keine spracherkennung",
+        "menu_publication": "Neuste veröffentlichungen",
+        "menu_category": "Veröffentlichungen nach Kategorie"
+      },
+      "login": {
+        "nick_or_email": "Name oder e-mail",
+        "forgot_password": "Passwort vergessen?",
+        "create_account": "Ein konto erstellen"
+      },
+      "register": {
+        "title": "Registrieren",
+        "link_login": "Einloggen"
+      },
+      "forgot_password": {
+        "title": "Passwort vergessen",
+        "message_info": "Sie erhalten einen Link zum Ändern Ihres Passworts per E-Mail."
+      },
+      "reset_password": {
+        "title": "Redefinir senha",
+        "message_info": "Wählen Sie ein neues Passwort, das zurückgesetzt werden soll"
+      },
+      "profile": {
+        "edit": "Bearbeiten",
+        "personal_information": "Persönliche Informationen",
+        "localization": "Ort",
+        "contacts": "Kontakte",
+        "account": "Konto"
+      }
+    }
+  }
+  

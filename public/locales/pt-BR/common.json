@@ -1,16 +1,26 @@
 {
-  "portuguese": "Português",
-  "english": "Inglês",
-  "spanish": "Espanhol",
+  "portuguese": "Portuguese",
+  "english": "English",
+  "spanish": "Español",
   "arabic": "Árabe",
-  "french": "Francês",
+  "french": "Francés",
+  "italian": "Italian",
+  "albanian": "Albanés",
+  "catalán": "Catalán",
+  "croatian": "Croata",
+  "czech": "Checo",
+  "Danish": "Danés",
+  "German": "Alemán",
+  "Greek": "Griego",
+  "Japanese": "Japonés",
+  "Korean": "Coreano",
   "error": {
     "error": "Erro"
   },
   "forms": {
     "password": "Senha",
     "name": "Nome",
-    "password_confirmation": "Confirme a password",
+    "password_confirmation": "Confirme a senha",
     "phone_cell": "Celular",
     "landline": "Telefone fixo",
     "personal_identification": "Identificação pessoal",
@@ -47,7 +57,7 @@
     },
     "login": {
       "nick_or_email": "Nome ou e-mail",
-      "forgot_password": "Esqueceu a senha ?",
+      "forgot_password": "Esqueceu a senha?",
       "create_account": "Criar Conta"
     },
     "register": {

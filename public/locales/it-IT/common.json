@@ -1,0 +1,84 @@
+{
+    "portuguese": "Portuguese",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "Árabe",
+    "french": "Francés",
+    "italian": "Italian",
+    "albanian": "Albanés",
+    "catalán": "Catalán",
+    "croatian": "Croata",
+    "czech": "Checo",
+    "Danish": "Danés",
+    "German": "Alemán",
+    "Greek": "Griego",
+    "Japanese": "Japonés",
+    "Korean": "Coreano",
+    "error": {
+      "error": "Errore"
+    },
+    "forms": {
+      "password": "Parola d'ordine",
+      "name": "Nome",
+      "password_confirmation": "Conferma la password",
+      "phone_cell": "Cellula",
+      "landline": "Linea fissa",
+      "personal_identification": "Identificazione personale",
+      "country": "Paese",
+      "state": "Stato",
+      "city": "Città",
+      "address": "Indirizzo",
+      "number": "Numero",
+      "message_error": {
+        "required": ":FIELD obbligatorio",
+        "email": "E-mail non valido",
+        "password_confirmation": "password divergenti",
+        "number": "Si prega di inserire solo il numero",
+        "max": "Massimo :NUM caratteri",
+        "type": "Si prega di inserire solo lettere"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "Chiudere",
+          "topic": "Temi",
+          "article": "Articoli",
+          "news": "Notizia",
+          "create_publication": "Creare pubblicazione",
+          "configuration": "Impostazioni"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Home",
+        "popover_message": "Questo browser non supporta il riconoscimento vocale",
+        "menu_publication": "Pubblicazioni più recenti",
+        "menu_category": "Pubblicazioni per categoria"
+      },
+      "login": {
+        "nick_or_email": "Nome o e-mail",
+        "forgot_password": "Ha dimenticato la password?",
+        "create_account": "Creare un account"
+      },
+      "register": {
+        "title": "Registrati",
+        "link_login": "Accesso"
+      },
+      "forgot_password": {
+        "title": "Ha dimenticato la password",
+        "message_info": "Riceverai un link per modificare la tua password via e-mail."
+      },
+      "reset_password": {
+        "title": "Ridefinisci la password",
+        "message_info": "Scegli una nuova password da reimpostare"
+      },
+      "profile": {
+        "edit": "Modificare",
+        "personal_information": "Informazione personale",
+        "localization": "Posizione",
+        "contacts": "Contatti",
+        "account": "Account"
+      }
+    }
+  }
+  

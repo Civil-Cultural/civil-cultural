@@ -1,0 +1,84 @@
+{
+  "portuguese": "Portuguese",
+  "english": "English",
+  "spanish": "Español",
+  "arabic": "Árabe",
+  "french": "Francés",
+  "italian": "Italian",
+  "albanian": "Albanés",
+  "catalán": "Catalán",
+  "croatian": "Croata",
+  "czech": "Checo",
+  "Danish": "Danés",
+  "German": "Alemán",
+  "Greek": "Griego",
+  "Japanese": "Japonés",
+  "Korean": "Coreano",
+    "error": {
+      "error": "Λάθος"
+    },
+    "forms": {
+      "password": "Κωδικός πρόσβασης",
+      "name": "Ονομα",
+      "password_confirmation": "Επιβεβαιώστε τον κωδικό πρόσβασης",
+      "phone_cell": "Κύτταρο",
+      "landline": "Σταθερή τηλεφωνία",
+      "personal_identification": "Προσωπική αναγνώριση",
+      "country": "Χώρα",
+      "state": "κατάσταση",
+      "city": "Πόλη",
+      "address": "Διεύθυνση",
+      "number": "Αριθμός",
+      "message_error": {
+        "required": ":FIELD επιτακτικός",
+        "email": "Ακυρη διεύθυνση ηλεκτρονικού ταχυδρομείου",
+        "password_confirmation": "διαφορετικούς κωδικούς πρόσβασης",
+        "number": "Εισαγάγετε μόνο αριθμό",
+        "max": "Μέγιστος αριθμός :NUM χαρακτήρες",
+        "type": "Παρακαλώ εισάγετε μόνο γράμματα"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "Κλείσε",
+          "topic": "Θέματα",
+          "article": "άρθρα",
+          "news": "Νέα",
+          "create_publication": "δημιουργία δημοσίευσης",
+          "configuration": "Ρυθμίσεις"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Σπίτι",
+        "popover_message": "Αυτό το πρόγραμμα περιήγησης δεν υποστηρίζει αναγνώριση ομιλίας",
+        "menu_publication": "πιο πρόσφατες δημοσιεύσεις",
+        "menu_category": "Δημοσιεύσεις ανά κατηγορία"
+      },
+      "login": {
+        "nick_or_email": "Όνομα ή email",
+        "forgot_password": "Ξεχάσατε τον κωδικό?",
+        "create_account": "Δημιουργία λογαριασμού"
+      },
+      "register": {
+        "title": "Κανω ΕΓΓΡΑΦΗ",
+        "link_login": "Σύνδεση"
+      },
+      "forgot_password": {
+        "title": "Ξεχάσατε τον κωδικό",
+        "message_info": "Θα λάβετε έναν σύνδεσμο για να αλλάξετε τον κωδικό πρόσβασής σας μέσω email."
+      },
+      "reset_password": {
+        "title": "Επαναπροσδιορίστε τον κωδικό πρόσβασης",
+        "message_info": "Επιλέξτε έναν νέο κωδικό πρόσβασης για επαναφορά"
+      },
+      "profile": {
+        "edit": "Για να επεξεργαστείτε",
+        "personal_information": "Προσωπικές πληροφορίες",
+        "localization": "Τοποθεσία",
+        "contacts": "Επαφές",
+        "account": "λογαριασμός"
+      }
+    }
+  }
+  

@@ -1,0 +1,84 @@
+{
+  "portuguese": "Portuguese",
+  "english": "English",
+  "spanish": "Español",
+  "arabic": "Árabe",
+  "french": "Francés",
+  "italian": "Italian",
+  "albanian": "Albanés",
+  "catalán": "Catalán",
+  "croatian": "Croata",
+  "czech": "Checo",
+  "Danish": "Danés",
+  "German": "Alemán",
+  "Greek": "Griego",
+  "Japanese": "Japonés",
+  "Korean": "Coreano",
+    "error": {
+      "error": "Fejl"
+    },
+    "forms": {
+      "password": "Adgangskode",
+      "name": "Navn",
+      "password_confirmation": "Bekræft adgangskoden",
+      "phone_cell": "Celle",
+      "landline": "Fastnet",
+      "personal_identification": "Personlig identifikation",
+      "country": "Land",
+      "state": "Stat",
+      "city": "By",
+      "address": "Adresse",
+      "number": "Nummer",
+      "message_error": {
+        "required": ":FIELD obligatorisk",
+        "email": "Ugyldig email",
+        "password_confirmation": "Divergerende adgangskoder",
+        "number": "Indtast kun nummer",
+        "max": "Maksimum :NUM tegn",
+        "type": "Indtast kun bogstaver"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "Tæt",
+          "topic": "Emner",
+          "article": "Artikler",
+          "news": "Nyheder",
+          "create_publication": "skabe udgivelse",
+          "configuration": "Indstillinger"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Home",
+        "popover_message": "Denne browser understøtter ikke talegenkendelse",
+        "menu_publication": "Seneste udgivelser",
+        "menu_category": "Publikationer efter kategori"
+      },
+      "login": {
+        "nick_or_email": "Navn eller e-mail",
+        "forgot_password": "Glemt kodeord?",
+        "create_account": "Opret en konto"
+      },
+      "register": {
+        "title": "Tilmeld",
+        "link_login": "Log på"
+      },
+      "forgot_password": {
+        "title": "Glemt kodeord",
+        "message_info": "Du vil modtage et link til at ændre din adgangskode via e-mail."
+      },
+      "reset_password": {
+        "title": "Omdefiner adgangskode",
+        "message_info": "Vælg en ny adgangskode, der skal nulstilles"
+      },
+      "profile": {
+        "edit": "At redigere",
+        "personal_information": "Personlig information",
+        "localization": "Beliggenhed",
+        "contacts": "Kontaktpersoner",
+        "account": "Konto"
+      }
+    }
+  }
+  
