@@ -1,0 +1,82 @@
+{
+    "portuguese": "Portuguese",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "Árabe",
+    "french": "Francés",
+    "italian": "Italian",
+    "albanian": "Albanés",
+    "catalán": "Catalán",
+    "croatian": "Croata",
+    "czech": "Checo",
+    "Danish": "Danés",
+    "German": "Alemán",
+    "Greek": "Griego",
+    "Japanese": "Japonés",
+    "Korean": "Coreano",
+    "error": {
+      "error": "間違い"
+    },
+    "forms": {
+      "password": "パスワード",
+      "name": "名前",
+      "password_confirmation": "パスワードを認証する",
+      "phone_cell": "携帯電話",
+      "landline": "ランドライン",
+      "personal_identification": "個人の識別",
+      "country": "国",
+      "state": "調子",
+      "city": "街",
+      "address": "住所",
+      "number": "番号",
+      "message_error": {
+        "required": "必須フィールド",
+        "email": "無効なメール",
+        "password_confirmation": "発散したパスワード",
+        "number": "数字のみ入力してください",
+        "max": "最大文字数",
+        "type": "文字のみ入力してください"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "閉じるには",
+          "topic": "テーマ",
+          "article": "論文",
+          "news": "ニュース",
+          "create_publication": "投稿を作成",
+          "configuration": "設定"
+      }
+    },
+    "pages": {
+      "home": {
+        "popover_message": "このブラウザは音声認識をサポートしていません.",
+        "menu_publication": "最新の投稿",
+        "menu_category": "カテゴリ別の投稿"
+      },
+      "login": {
+        "nick_or_email": "ニックネームまたはメール",
+        "forgot_password": "パスワードを忘れた ?",
+        "create_account": "アカウントを作成する"
+      },
+      "register": {
+        "title": "記録",
+        "link_login": "ログイン"
+      },
+      "forgot_password": {
+        "title": "パスワードを忘れた",
+        "message_info": "パスワードを変更するためのリンクがメールで届きます"
+      },
+      "reset_password": {
+        "title": "パスワードを再設定する",
+        "message_info": "リセットする新しいパスワードを選択してください"
+      },
+      "profile": {
+        "edit": "編集",
+        "personal_information": "個人情報",
+        "localization": "位置",
+        "contacts": "連絡先",
+        "account": "明細書"
+      }
+    }
+  }

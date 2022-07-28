@@ -1,0 +1,83 @@
+{
+    "portuguese": "Portuguese",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "Árabe",
+    "french": "Francés",
+    "italian": "Italian",
+    "albanian": "Albanés",
+    "catalán": "Catalán",
+    "croatian": "Croata",
+    "czech": "Checo",
+    "Danish": "Danés",
+    "German": "Alemán",
+    "Greek": "Griego",
+    "Japanese": "Japonés",
+    "Korean": "Coreano",
+    "error": {
+      "error": "Gabim"
+    },
+    "forms": {
+      "password": "Fjalëkalimi",
+      "name": "Emri",
+      "password_confirmation": "Konfirmoni fjalëkalimin",
+      "phone_cell": "Qelizë",
+      "landline": "Telefoni fiks",
+      "personal_identification": "Identifikimi personal",
+      "country": "Vendi",
+      "state": "Shteti",
+      "city": "Qyteti",
+      "address": "Adresë",
+      "number": "Numri",
+      "message_error": {
+        "required": ":FIELD të detyrueshme",
+        "email": "Email i pavlefshem",
+        "password_confirmation": "Fjalëkalime të ndryshme",
+        "number": "Ju lutemi shkruani vetëm numrin",
+        "max": "Maksimumi :NUM karaktere",
+        "type": "Ju lutemi shkruani vetëm shkronja"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "Mbylle",
+          "topic": "Temat",
+          "article": "Artikuj",
+          "news": "Lajme",
+          "create_publication": "Krijojnë botim",
+          "configuration": "Cilësimet"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Home",
+        "popover_message": "Ky shfletues nuk e mbështet njohjen e të folurit",
+        "menu_publication": "Publikimet më të fundit",
+        "menu_category": "Publikimet sipas kategorive"
+      },
+      "login": {
+        "nick_or_email": "Emri ose emaili",
+        "forgot_password": "keni harruar fjalëkalimin?",
+        "create_account": "Krijo nje llogari"
+      },
+      "register": {
+        "title": "Regjistrohu",
+        "link_login": "Identifikohu"
+      },
+      "forgot_password": {
+        "title": "Keni harruar fjalëkalimin",
+        "message_info": "Ju do të merrni një lidhje për të ndryshuar fjalëkalimin tuaj me email"
+      },
+      "reset_password": {
+        "title": "Ripërcaktoni fjalëkalimin",
+        "message_info": "Zgjidhni një fjalëkalim të ri për t'u rivendosur"
+      },
+      "profile": {
+        "edit": "Për të redaktuar",
+        "personal_information": "Informata personale",
+        "localization": "Vendndodhja",
+        "contacts": "Kontaktet",
+        "account": "Llogaria"
+      }
+    }
+  }

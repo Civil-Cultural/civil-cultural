@@ -1,0 +1,84 @@
+{
+    "portuguese": "Portuguese",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "Árabe",
+    "french": "Francés",
+    "italian": "Italian",
+    "albanian": "Albanés",
+    "catalán": "Catalán",
+    "croatian": "Croata",
+    "czech": "Checo",
+    "Danish": "Danés",
+    "German": "Alemán",
+    "Greek": "Griego",
+    "Japanese": "Japonés",
+    "Korean": "Coreano",
+    "error": {
+      "error": "Pogreška"
+    },
+    "forms": {
+      "password": "Zaporka",
+      "name": "Ime",
+      "password_confirmation": "Potvrdite lozinku",
+      "phone_cell": "Ćelija",
+      "landline": "Fiksna linija",
+      "personal_identification": "Osobna identifikacija",
+      "country": "Zemlja",
+      "state": "Država",
+      "city": "Grad",
+      "address": "Adresa",
+      "number": "Broj",
+      "message_error": {
+        "required": ":FIELD obavezna",
+        "email": "Nevažeći email",
+        "password_confirmation": "Različite lozinke",
+        "number": "Unesite samo broj",
+        "max": "Maksimalno :NUM znakova",
+        "type": "Unesite samo slova"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "Zatvoriti",
+          "topic": "Teme",
+          "article": "članci",
+          "news": "Vijesti",
+          "create_publication": "Stvoriti publikaciju",
+          "configuration": "Postavke"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Dom",
+        "popover_message": "Ovaj preglednik ne podržava prepoznavanje govora",
+        "menu_publication": "Najnovije publikacije",
+        "menu_category": "Publikacije po kategorijama"
+      },
+      "login": {
+        "nick_or_email": "Ime ili email",
+        "forgot_password": "Zaboravili ste lozinku?",
+        "create_account": "Stvorite račun"
+      },
+      "register": {
+        "title": "Registar",
+        "link_login": "Prijaviti se"
+      },
+      "forgot_password": {
+        "title": "Zaboravili ste lozinku",
+        "message_info": "E-poštom ćete dobiti poveznicu za promjenu lozinke."
+      },
+      "reset_password": {
+        "title": "Redefinirajte lozinku",
+        "message_info": "Odaberite novu lozinku koju želite poništiti"
+      },
+      "profile": {
+        "edit": "Urediti",
+        "personal_information": "Osobne informacije",
+        "localization": "Mjesto",
+        "contacts": "Kontakti",
+        "account": "Račun"
+      }
+    }
+  }
+  

@@ -1,0 +1,84 @@
+{
+  "portuguese": "Portuguese",
+  "english": "English",
+  "spanish": "Español",
+  "arabic": "Árabe",
+  "french": "Francés",
+  "italian": "Italian",
+  "albanian": "Albanés",
+  "catalán": "Catalán",
+  "croatian": "Croata",
+  "czech": "Checo",
+  "Danish": "Danés",
+  "German": "Alemán",
+  "Greek": "Griego",
+  "Japanese": "Japonés",
+  "Korean": "Coreano",
+    "error": {
+      "error": "Errada"
+    },
+    "forms": {
+      "password": "Contrasenya",
+      "name": "Nom",
+      "password_confirmation": "Confirmeu la contrasenya",
+      "phone_cell": "Cèl·lula",
+      "landline": "Fixa",
+      "personal_identification": "Identificació personal",
+      "country": "País",
+      "state": "Estat",
+      "city": "Ciutat",
+      "address": "Adreça",
+      "number": "Número",
+      "message_error": {
+        "required": ":FIELD obligatòria",
+        "email": "Email invàlid",
+        "password_confirmation": "contrasenyes divergents",
+        "number": "Introduïu només el número",
+        "max": "Màxim :NUM personatges",
+        "type": "Introduïu només lletres"
+      }
+    },
+    "components": {
+      "sidebar": {
+          "close": "Tanca",
+          "topic": "Temes",
+          "article": "Articles",
+          "news": "Notícies",
+          "create_publication": "Crear una publicació",
+          "configuration": "Configuracions"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Home",
+        "popover_message": "Aquest navegador no admet el reconeixement de veu",
+        "menu_publication": "Publicacions més recents",
+        "menu_category": "Publicacions per categories"
+      },
+      "login": {
+        "nick_or_email": "Nom o correu electrònic",
+        "forgot_password": "Has oblidat la contrasenya?",
+        "create_account": "Crear un compte"
+      },
+      "register": {
+        "title": "Registra't",
+        "link_login": "iniciar sessió"
+      },
+      "forgot_password": {
+        "title": "Has oblidat la contrasenya",
+        "message_info": "Rebràs un enllaç per canviar la teva contrasenya per correu electrònic."
+      },
+      "reset_password": {
+        "title": "Redefinir la contrasenya",
+        "message_info": "Trieu una contrasenya nova per restablir"
+      },
+      "profile": {
+        "edit": "Per editar",
+        "personal_information": "Informació personal",
+        "localization": "Ubicació",
+        "contacts": "Contactes",
+        "account": "Compte"
+      }
+    }
+  }
+  
