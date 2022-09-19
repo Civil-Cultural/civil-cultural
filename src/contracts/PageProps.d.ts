@@ -1,19 +1,11 @@
 
 import { ReactElement, ReactNode } from 'react'
-import { NextPage } from 'next'
-import { AppProps as NextAppProps } from 'next/app'
+import { NextPage } from "next";
 
 export interface LayoutProps {
     title?: string;
     children?: ReactNode;
 }
-
-
-export type AppProps = NextAppProps & {
-    Component: NextPage
-}
-
-
 
 interface Paginate {
     total: number,

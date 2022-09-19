@@ -24,11 +24,13 @@ function CreatePublication() {
                         </Label>
                     </Form.Group>
 
-                    <Form.Group className="col-11 mx-auto col-lg-6">
+                    <Form.Group className="col-11 mx-auto col-lg-6 mb-4">
                         <Label label="Descrição" className={styles.label}>
                             <Input type="text" placeholder="Descrição" />
                         </Label>
                     </Form.Group>
+
+                    <Form.Group className="col-11 mx-auto col-lg-6"></Form.Group>
                 </Form>
             </Col>
         </Col>

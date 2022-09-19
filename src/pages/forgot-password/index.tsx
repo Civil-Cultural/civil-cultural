@@ -77,7 +77,7 @@ export default function RecoverPassword() {
                           </Label>
 
                           <Col className="col-12 mx-auto">
-                              {errors.email && <AlertError text={errors.email.message} />}
+                              {errors.email && <AlertError text={errors.email.message as string} />}
                           </Col>
                       </Form.Group>
 

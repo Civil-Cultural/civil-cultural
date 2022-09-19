@@ -100,7 +100,7 @@ export default function Login() {
                                 />
                             </Label>
                             <Col className="col-12 mx-auto mt-2">
-                                {errors.user && <AlertError text={errors.user.message} />}
+                                {errors.user && <AlertError text={errors.user.message as string} />}
                             </Col>
                         </Form.Group>
 
@@ -119,7 +119,7 @@ export default function Login() {
                                 />
                             </Label>
                             <Col className="col-12 mx-auto mt-2">
-                                {errors.password && <AlertError text={errors.password.message} />}
+                                {errors.password && <AlertError text={errors.password.message as string} />}
                             </Col>
                         </Form.Group>
 

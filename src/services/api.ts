@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useCookie } from 'react-use'
 
+const tokenApi = "";
 
 const api = axios.create({
         baseURL: process.env.NEXT_PUBLIC_URL_API,

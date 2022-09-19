@@ -1,12 +1,18 @@
 /* ----------- RESOURCES ----------- */
+import Image from "next/image";
 import { useState, useEffect, useMemo } from "react";
+import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { useTheme } from "Hooks/useTheme";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+
+import { useTheme } from "Hooks/useTheme";
+
+/* ----------- IMAGES ----------- */
+import RegisterIllustration from "assets/register-illustration.svg";
 
 /* ----------- COMPONENTS ----------- */
 import Head from "next/head";
@@ -15,7 +21,7 @@ import Button from "Components/Button";
 import Label from "Components/Label";
 import Input from "Components/Input";
 import AlertError from "Components/AlertError";
-import { Row, Col, Form } from "react-bootstrap";
+import { Col, Form } from "react-bootstrap";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 interface CountryProps {
@@ -118,7 +124,9 @@ export default function Register({ locale }) {
                 <title>{t("pages.register.title")} - Civil Cultural</title>
             </Head>
 
-            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full" />
+            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full">
+                <Image src={RegisterIllustration} />
+            </Col>
 
             <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12">
                 <Form className="col-11 mx-auto" onSubmit={handleSubmit(submit)}>
@@ -133,7 +141,7 @@ export default function Register({ locale }) {
                             />
                         </Label>
                         <Col className="col-12 mx-auto mt-2">
-                            {errors.name && <AlertError text={errors.name.message} />}
+                            {errors.name && <AlertError text={errors.name.message as string} />}
                         </Col>
                     </Form.Group>
 
@@ -148,7 +156,7 @@ export default function Register({ locale }) {
                             />
                         </Label>
                         <Col className="col-12 mx-auto mt-2">
-                            {errors.email && <AlertError text={errors.email.message} />}
+                            {errors.email && <AlertError text={errors.email.message as string} />}
                         </Col>
                     </Form.Group>
 
@@ -176,7 +184,7 @@ export default function Register({ locale }) {
                             </Label>
 
                             <Col className="col-12 mx-auto mt-2">
-                                {errors.password && <AlertError text={errors.password.message} />}
+                                {errors.password && <AlertError text={errors.password.message as string} />}
                             </Col>
                         </Col>
 
@@ -192,7 +200,7 @@ export default function Register({ locale }) {
                             </Label>
                             <Col className="col-12 mx-auto mt-2">
                                 {errors.password_confirmation && (
-                                    <AlertError text={errors.password_confirmation.message} />
+                                    <AlertError text={errors.password_confirmation.message as string} />
                                 )}
                             </Col>
                         </Col>
@@ -210,7 +218,7 @@ export default function Register({ locale }) {
                                 />
                             </Label>
                             <Col className="col-12 mx-auto mt-2">
-                                {errors.phone_cell && <AlertError text={errors.phone_cell.message} />}
+                                {errors.phone_cell && <AlertError text={errors.phone_cell.message as string} />}
                             </Col>
                         </Col>
 
@@ -229,7 +237,7 @@ export default function Register({ locale }) {
                             </Label>
                             <Col className="col-12 mx-auto mt-2">
                                 {errors.phone_fix_number && (
-                                    <AlertError text={errors.phone_fix_number.message} />
+                                    <AlertError text={errors.phone_fix_number.message as string} />
                                 )}
                             </Col>
                         </Col>
@@ -237,7 +245,6 @@ export default function Register({ locale }) {
 
                     <Form.Group className="row p-0 m-0 mb-4">
                         <Label label={t("forms.personal_identification")}>
-                            
                             <Input
                                 placeholder={t("forms.personal_identification")}
                                 aria-label={t("forms.personal_identification")}
@@ -247,7 +254,7 @@ export default function Register({ locale }) {
                         </Label>
                         <Col className="col-12 mx-auto mt-2">
                             {errors.personal_identification && (
-                                <AlertError text={errors.personal_identification.message} />
+                                <AlertError text={errors.personal_identification.message as string} />
                             )}
                         </Col>
                     </Form.Group>
@@ -271,7 +278,7 @@ export default function Register({ locale }) {
                             </Form.Select>
                         </Label>
                         <Col className="col-12 mx-auto mt-2">
-                            {errors.country && <AlertError text={errors.country.message} />}
+                            {errors.country && <AlertError text={errors.country.message as string} />}
                         </Col>
                     </Form.Group>
 
@@ -286,7 +293,7 @@ export default function Register({ locale }) {
                             />
                         </Label>
                         <Col className="col-12 mx-auto mt-2">
-                            {errors.state && <AlertError text={errors.state.message} />}
+                            {errors.state && <AlertError text={errors.state.message as string} />}
                         </Col>
                     </Form.Group>
 
@@ -306,7 +313,7 @@ export default function Register({ locale }) {
                             />
                         </Label>
                         <Col className="col-12 mx-auto mt-2">
-                            {errors.cep && <AlertError text={errors.cep.message} />}
+                            {errors.cep && <AlertError text={errors.cep.message as string} />}
                         </Col>
                     </Form.Group>
 
@@ -321,7 +328,7 @@ export default function Register({ locale }) {
                             />
                         </Label>
                         <Col className="col-12 mx-auto mt-2">
-                            {errors.city && <AlertError text={errors.city.message} />}
+                            {errors.city && <AlertError text={errors.city.message as string} />}
                         </Col>
                     </Form.Group>
 
@@ -336,7 +343,7 @@ export default function Register({ locale }) {
                             />
                         </Label>
                         <Col className="col-12 mx-auto mt-2">
-                            {errors.address && <AlertError text={errors.address.message} />}
+                            {errors.address && <AlertError text={errors.address.message as string} />}
                         </Col>
                     </Form.Group>
 
@@ -358,10 +365,10 @@ export default function Register({ locale }) {
     );
 }
 
-export async function getStaticProps({ locale }) {
+export const getStaticProps: GetStaticProps = async ({ locale }: { locale: string }) => {
     return {
         props: {
             ...(await serverSideTranslations(locale, ["common"])),
         },
     };
-}
+};
