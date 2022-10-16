@@ -78,6 +78,9 @@
         "localization": "Vendndodhja",
         "contacts": "Kontaktet",
         "account": "Llogaria"
+      },
+      "register-admin": {
+        "title": "Administratori i regjistrit"
       }
     }
   }

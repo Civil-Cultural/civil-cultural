@@ -78,6 +78,9 @@
         "localization": "Umístění",
         "contacts": "Kontakty",
         "account": "Účet"
+      },
+      "register-admin": {
+        "title": "správce registru"
       }
     }
   }

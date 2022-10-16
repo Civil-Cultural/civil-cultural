@@ -78,6 +78,9 @@
         "localization": "Τοποθεσία",
         "contacts": "Επαφές",
         "account": "λογαριασμός"
+      },
+      "register-admin": {
+        "title": "διαχειριστής μητρώου"
       }
     }
   }

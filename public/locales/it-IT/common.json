@@ -78,6 +78,9 @@
         "localization": "Posizione",
         "contacts": "Contatti",
         "account": "Account"
+      },
+      "register-admin": {
+        "title": "Amministratore del registro"
       }
     }
   }
