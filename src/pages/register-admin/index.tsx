@@ -121,7 +121,7 @@ export default function RegisterAdmin({ locale }) {
     return (
         <Col className={`${styles.containerRegisterAdmin} ${styles[theme]} row p-0 m-0 col-12 py-3`}>
             <Head>
-                <title>{t("pages.register.title")} - Civil Cultural</title>
+                <title>{t("pages.register-admin.title")} - Civil Cultural</title>
             </Head>
 
             <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full">
