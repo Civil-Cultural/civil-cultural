@@ -128,7 +128,10 @@ export default function RegisterAdmin({ locale }) {
                 <Image src={RegisterIllustration} />
             </Col>
 
-            <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12">
+            <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12">  
+                <div className={`d-flex justify-content-center`}>
+                    <h1 className={`${styles.page_title}`}>Cadastrar Administrador</h1>
+                </div>
                 <Form className="col-11 mx-auto" onSubmit={handleSubmit(submit)}>
                     <Form.Group className="row p-0 m-0 mb-4">
                         <Label label={t("forms.name")}>
