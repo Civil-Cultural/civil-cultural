@@ -12,7 +12,7 @@ import * as yup from "yup";
 import { useTheme } from "Hooks/useTheme";
 
 /* ----------- IMAGES ----------- */
-import OwlIlustration from "assets/owl.webp";
+import OwlIlustration from "assets/owl.jpg";
 
 /* ----------- COMPONENTS ----------- */
 import Head from "next/head";
@@ -119,16 +119,16 @@ export default function RegisterAdmin({ locale }) {
     }, []);
 
     return (
-        <Col className={`${styles.containerRegisterAdmin} ${styles[theme]} row p-0 m-0 col-12 py-3`}>
+        <Col className={`${styles.containerRegisterAdmin} ${styles[theme]} row p-0 m-0 col-12`}>
             <Head>
                 <title>{t("pages.register-admin.title")} - Civil Cultural</title>
             </Head>
 
             <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full">
-                <Image src={OwlIlustration} />
+                <Image src={OwlIlustration}/>
             </Col>
 
-            <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12">  
+            <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12 py-1">  
                 <div className={`d-flex justify-content-center`}>
                     <h1 className={`${styles.page_title}`}>Cadastrar Administrador</h1>
                 </div>
