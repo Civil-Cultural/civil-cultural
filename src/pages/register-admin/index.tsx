@@ -124,8 +124,8 @@ export default function RegisterAdmin({ locale }) {
                 <title>{t("pages.register-admin.title")} - Civil Cultural</title>
             </Head>
 
-            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full">
-                <Image src={OwlIlustration}/>
+            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full position-relative">
+                <Image src={OwlIlustration} layout='fill' />
             </Col>
 
             <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12 py-1">  
