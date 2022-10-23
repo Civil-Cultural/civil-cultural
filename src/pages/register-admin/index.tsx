@@ -124,16 +124,16 @@ export default function RegisterAdmin({ locale }) {
                 <title>{t("pages.register-admin.title")} - Civil Cultural</title>
             </Head>
 
-            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full position-relative">
+            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 position-relative">
                 <Image src={OwlIlustration} layout='fill' />
             </Col>
 
             <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12 py-1">  
-                <div className={`d-flex justify-content-center`}>
+                <div className={`d-flex justify-content-center mt-2`}>
                     <h1 className={`${styles.page_title}`}>Cadastrar Administrador</h1>
                 </div>
                 <Form className="col-11 mx-auto" onSubmit={handleSubmit(submit)}>
-                    <Form.Group className="row p-0 m-0 mb-4">
+                    <Form.Group className="row p-0 m-0 mb-3">
                         <Label label={t("forms.name")}>
                             <Input
                                 type="text"
@@ -148,7 +148,7 @@ export default function RegisterAdmin({ locale }) {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group className="row p-0 m-0 mb-4">
+                    <Form.Group className="row p-0 m-0 mb-3">
                         <Label label="Email">
                             <Input
                                 type="email"
@@ -246,7 +246,7 @@ export default function RegisterAdmin({ locale }) {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group className="row p-0 m-0 mb-4">
+                    <Form.Group className="row p-0 m-0 mb-3">
                         <Label label={t("forms.personal_identification")}>
                             <Input
                                 placeholder={t("forms.personal_identification")}
@@ -262,7 +262,7 @@ export default function RegisterAdmin({ locale }) {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group className="row p-0 m-0 mb-4">
+                    <Form.Group className="row p-0 m-0 mb-3">
                         <Label label={t("forms.country")}>
                             <Form.Select
                                 placeholder={t("forms.country")}
@@ -285,7 +285,7 @@ export default function RegisterAdmin({ locale }) {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group className="row p-0 m-0 mb-4">
+                    <Form.Group className="row p-0 m-0 mb-3">
                         <Label label={t("forms.state")}>
                             <Input
                                 type="text"
@@ -300,7 +300,7 @@ export default function RegisterAdmin({ locale }) {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group className="row p-0 m-0 mb-4">
+                    <Form.Group className="row p-0 m-0 mb-3">
                         <Label label="Cep">
                             <Input
                                 type="text"
@@ -320,7 +320,7 @@ export default function RegisterAdmin({ locale }) {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group className="row p-0 m-0 mb-4">
+                    <Form.Group className="row p-0 m-0 mb-3">
                         <Label label={t("forms.city")}>
                             <Input
                                 type="text"
@@ -335,7 +335,7 @@ export default function RegisterAdmin({ locale }) {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group className="row p-0 m-0 mb-4">
+                    <Form.Group className="row p-0 m-0 mb-3">
                         <Label label={t("forms.address")}>
                             <Input
                                 type="text"
@@ -358,7 +358,7 @@ export default function RegisterAdmin({ locale }) {
                     </Form.Group>
                 </Form>
 
-                <Col className="col-12 mt-2 text-center">
+                <Col className="col-12 mt-2 mb-2 text-center">
                     <Link href="/login">
                         <a className={`${styles.formLink} link-primary`}>{t("pages.register.link_login")}</a>
                     </Link>
