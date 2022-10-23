@@ -128,9 +128,9 @@ export default function RegisterAdmin({ locale }) {
                 <Image src={OwlIlustration} layout='fill' />
             </Col>
 
-            <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12 py-1">  
+            <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12 py-1 h-full">  
                 <div className={`d-flex justify-content-center mt-2`}>
-                    <h1 className={`${styles.page_title}`}>Cadastrar Administrador</h1>
+                    <h1 className={`${styles.page_title}`}>{t("pages.register-admin.title")}</h1>
                 </div>
                 <Form className="col-11 mx-auto" onSubmit={handleSubmit(submit)}>
                     <Form.Group className="row p-0 m-0 mb-3">
