@@ -12,7 +12,7 @@ import * as yup from "yup";
 import { useTheme } from "Hooks/useTheme";
 
 /* ----------- IMAGES ----------- */
-import OwlIlustration from "assets/owl.jpg";
+import RegisterIllustration from "assets/register-illustration.svg";
 
 /* ----------- COMPONENTS ----------- */
 import Head from "next/head";
@@ -124,8 +124,8 @@ export default function RegisterAdmin({ locale }) {
                 <title>{t("pages.register-admin.title")} - Civil Cultural</title>
             </Head>
 
-            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 position-relative">
-                <Image src={OwlIlustration} layout='fill' />
+            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full">
+                <Image src={RegisterIllustration} />
             </Col>
 
             <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12 py-1 h-full">  
