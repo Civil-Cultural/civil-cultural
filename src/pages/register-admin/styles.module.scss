@@ -1,0 +1,96 @@
+.containerRegisterAdmin {
+  &.light {
+      background-color: var(--light);
+  }
+
+  &.dark {
+      background-color: var(--dark);
+  }
+}
+
+.floatLabel {
+  font-size: .94em;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  &.light {
+      color: var(--gray-600);
+  }
+
+  &.dark {
+      color: var(--gray-200);
+  }
+
+  & > label {
+      bottom: -.8rem;
+      padding-left: .5rem !important;
+      padding-right: .5rem !important;
+  }
+}
+
+.formLink {
+  font-size: .86em;
+  font-weight: 500;
+}
+
+.formSelect {
+  height: calc(3.40rem + 2px) !important;
+
+  &.light {
+      color: var(--gray-600);
+      background-color: var(--light);
+  }
+
+  &.dark {
+      color: var(--gray-200);
+      background-color: var(--dark);
+  }
+
+  &:focus {
+      border: 1px solid var(--green-600);
+      box-shadow: 0 0 0 .25rem #00CF5D12;
+  }
+}
+
+.formTextarea {
+  height: 100px !important;
+
+  &.light, &.light:focus {
+      color: var(--gray-600);
+      background-color: var(--light);
+  }
+
+  &.dark , &.dark:focus {
+      color: var(--gray-100);
+      background-color: var(--dark);
+  }
+
+  &:focus {
+      border: 1px solid var(--green-600);
+      box-shadow: 0 0 0 .25rem #00CF5D12 !important;
+  }
+}
+
+.boxIcon {
+  position: absolute;
+  top: 1.5em;
+  right: 1px;
+}
+
+.iconEye {
+  width: 1.1rem;
+  height: 1.1rem;
+
+  &:active {
+      color: #4D4E51;
+  }
+}
+
+.iconEyeInvisible  {
+  width: 1.1rem;
+  height: 1.1rem;
+
+  &:active {
+      fill: #4D4E51;
+  }
+}

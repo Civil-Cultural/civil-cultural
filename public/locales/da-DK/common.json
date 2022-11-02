@@ -78,6 +78,9 @@
         "localization": "Beliggenhed",
         "contacts": "Kontaktpersoner",
         "account": "Konto"
+      },
+      "register-admin": {
+        "title": "registrere administrator"
       }
     }
   }

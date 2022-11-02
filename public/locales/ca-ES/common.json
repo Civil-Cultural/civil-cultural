@@ -78,6 +78,9 @@
         "localization": "Ubicació",
         "contacts": "Contactes",
         "account": "Compte"
+      },
+      "register-admin": {
+        "title": "administrador de registre"
       }
     }
   }

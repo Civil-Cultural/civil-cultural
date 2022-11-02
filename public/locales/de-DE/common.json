@@ -78,6 +78,9 @@
         "localization": "Ort",
         "contacts": "Kontakte",
         "account": "Konto"
+      },
+      "register-admin": {
+        "title": "Administrator registrieren"
       }
     }
   }
