@@ -2,14 +2,17 @@
 import Image from "next/image";
 import { useState, useEffect, useMemo } from "react";
 import { GetStaticProps } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+/* ----------- HOOKS ----------- */
 import { useTheme } from "Hooks/useTheme";
+
+/* ----------- UTILS ----------- */
+import { withI18n } from "Utils/withI18n";
 
 /* ----------- IMAGES ----------- */
 import RegisterIllustration from "assets/register-illustration.svg";
@@ -365,10 +368,4 @@ export default function Register({ locale }) {
     );
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }: { locale: string }) => {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ["common"])),
-        },
-    };
-};
+export const getStaticProps: GetStaticProps = withI18n()

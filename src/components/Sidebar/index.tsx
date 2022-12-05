@@ -23,7 +23,7 @@ interface SidebarState {
     handleClose: () => void;
 }
 
-export default function Sidebar({ active, handleClose }: SidebarState) {
+export default function Sidebar({ active }: SidebarState) {
     const [login, setLogin] = useState(false); // Estado só para simulação do login por enquanto
     const { theme } = useTheme();
     const { t } = useTranslation();

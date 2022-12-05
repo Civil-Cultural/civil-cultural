@@ -1,9 +1,10 @@
 /* ----------- RESOURCES ----------- */
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import Astro from 'Assets/astro_error.png'
 
 /* ----------- COMPONENTS ----------- */
+import Astro from 'Assets/astro_error.png'
+import AstroIllustration from 'assets/astro_error.png'
 import {
     Col
 } from 'react-bootstrap'
@@ -18,10 +19,12 @@ export default function Error({ statusCode }) {
         <Col className={`${styles.errorContainer} d-flex flex-column flex-wrap justify-content-center align-items-center p-0 m-0`}>
             <Col className={`${styles.errorContent} col-11 col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-11 col-xs-11`}>
                 <span className={styles.errorBadge}>Error</span>
+
                 <p className={styles.errorStatusCode}>{ statusCode }</p>
+
                 <Col className={styles.boxImg}>
                     <Image
-                        src={Astro}
+                        src={AstroIllustration}
                         alt='Astro'
                         objectFit='contain'
                         width={86}
@@ -29,6 +32,7 @@ export default function Error({ statusCode }) {
                     />
                 </Col>
             </Col>
+            
             <Col className='col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-11 col-xs-11 mt-3'>
                 <p style={{color: '#546475'}} className='text-center mb-0'>Let's go <a className={styles.linkBack} onClick={() => router.back()}>back</a></p>
             </Col>

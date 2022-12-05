@@ -1,9 +1,9 @@
 /* Resources */
 import { useRouter } from 'next/router'
-import Astro from 'Assets/astro_error.png'
+import Image from 'next/image'
 
 /* Components */
-import Image from 'next/image'
+import Astro from 'Assets/astro_error.png'
 import {
     Col
 } from 'react-bootstrap'

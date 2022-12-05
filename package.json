@@ -9,6 +9,7 @@
         "create-env": "cp .env.example .env"
     },
     "dependencies": {
+        "node": ">=18.12.1",
         "@hookform/resolvers": "^2.8.3",
         "axios": "^0.24.0",
         "bootstrap": "5.1.3",

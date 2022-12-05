@@ -1,13 +1,16 @@
 /* ----------- RESOURCES ----------- */
 import { useMemo, useState } from 'react'
 import { GetStaticProps } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+/* ----------- HOOKS ----------- */
 import { useTheme } from "Hooks/useTheme";
+
+/* ----------- OTHERS ----------- */
+import { withI18n } from 'Utils/withI18n';
 
 /* ----------- ICONS ----------- */
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
@@ -78,6 +81,7 @@ export default function NewPassword() {
                             <p className={`${styles.instruction} ${styles[theme]}`}>
                                 {t("pages.reset_password.message_info")}
                             </p>
+                            
                             <Label label={t("forms.password")}>
                                 <Input
                                     type={showPassword ? "text" : "password"}
@@ -136,10 +140,4 @@ export default function NewPassword() {
     );
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }: { locale: string }) => {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ["common"])),
-        },
-    };
-};
+export const getStaticProps: GetStaticProps = withI18n()

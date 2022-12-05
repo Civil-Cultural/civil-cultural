@@ -1,11 +1,14 @@
 /* ----------- RESOURCES ----------- */
+import { GetStaticProps } from 'next'
 import { useTheme } from 'Hooks/useTheme'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import { useRive, useStateMachineInput } from 'rive-react'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
+
+/* ----------- UTILS ----------- */
+import { withI18n } from 'Utils/withI18n'
 
 /* ----------- COMPONENTS ----------- */
 import Head from "next/head";
@@ -53,7 +56,7 @@ export default function Login() {
         src: "scientist-login.riv",
         stateMachines: STATE_MACHINE_NAME,
         autoplay: true,
-        onLoadError(err) {},
+        onLoadError() {},
     });
 
     const checking = useStateMachineInput(rive, STATE_MACHINE_NAME, STATE_MACHINE_CHECKING);
@@ -144,10 +147,4 @@ export default function Login() {
     );
 }
 
-export async function getStaticProps({ locale }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ['common']))
-        }
-    }
-}
+export const getStaticProps: GetStaticProps = withI18n()

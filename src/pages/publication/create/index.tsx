@@ -1,10 +1,14 @@
 /* ----------- RESOURCES ----------- */
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+// import { useForm } from "react-hook-form";
+// import { yupResolver } from "@hookform/resolvers/yup";
+// import * as yup from "yup";
 import { Layout } from "Utils/Layout";
+import { GetStaticProps } from "next";
 
-/* ----------- RESOURCES ----------- */
+/* ----------- OTHERS ----------- */
+import { withI18n } from "Utils/withI18n";
+
+/* ----------- COMPONENTS ----------- */
 import MainLayout from "Layouts/MainLayout";
 import Label from "Components/Label";
 import Input from "Components/Input";
@@ -40,3 +44,5 @@ function CreatePublication() {
 export default Layout(CreatePublication, MainLayout, {
     title: "Create Publication",
 });
+
+export const getStaticProps: GetStaticProps = withI18n()

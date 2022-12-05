@@ -2,7 +2,9 @@
 import { useTheme } from "Hooks/useTheme";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+/* ----------- UTILS ----------- */
+import { withI18n } from "Utils/withI18n";
 
 /* ----------- COMPONENTS ----------- */
 import { FloatingLabel } from "react-bootstrap";
@@ -16,6 +18,7 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 /* ----------- STYLES ----------- */
 import styles from "Pages/profile/styles.module.scss";
+import { GetStaticProps } from "next";
 
 function Profile() {
   const { theme } = useTheme();
@@ -328,10 +331,4 @@ export default Layout(Profile, MainLayout, {
     title: "Profile",
 });
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
-}
+export const getStaticProps: GetStaticProps = withI18n()

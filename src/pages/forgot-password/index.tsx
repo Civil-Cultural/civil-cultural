@@ -1,12 +1,15 @@
 /* ----------- RESOURCES ----------- */
 import { useMemo } from 'react'
+import { GetStaticProps } from 'next'
 import router from 'next/router'
 import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTheme } from 'Hooks/useTheme'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+
+/* ----------- UTILS ----------- */
+import { withI18n } from 'Utils/withI18n'
 
 /* ----------- COMPONENTS ----------- */
 import Head from 'next/head'
@@ -107,10 +110,4 @@ export default function RecoverPassword() {
   );
 }
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common']))
-    }
-  }
-}
+export const getStaticProps: GetStaticProps = withI18n()
