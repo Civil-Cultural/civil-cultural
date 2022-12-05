@@ -2,14 +2,17 @@
 import Image from "next/image";
 import { useState, useEffect, useMemo } from "react";
 import { GetStaticProps } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+/* ----------- HOOKS ----------- */
 import { useTheme } from "Hooks/useTheme";
+
+/* ----------- UTILS ----------- */
+import { withI18n } from "Utils/withI18n";
 
 /* ----------- IMAGES ----------- */
 import RegisterIllustration from "assets/register-illustration.svg";
@@ -23,6 +26,7 @@ import Input from "Components/Input";
 import AlertError from "Components/AlertError";
 import { Col, Form } from "react-bootstrap";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+
 
 interface CountryProps {
     id: {
@@ -38,7 +42,7 @@ interface CountryProps {
 /* ----------- STYLES ----------- */
 import styles from "Pages/register-admin/styles.module.scss";
 
-export default function RegisterAdmin({ locale }) {
+export default function RegisterAdmin() {
     const { theme } = useTheme();
     const [countries, setCountries] = useState<CountryProps[]>([]);
     const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -124,11 +128,11 @@ export default function RegisterAdmin({ locale }) {
                 <title>{t("pages.register-admin.title")} - Civil Cultural</title>
             </Head>
 
-            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6 h-full">
+            <Col className="d-none d-xxl-block d-xl-block d-lg-block col-6">
                 <Image src={RegisterIllustration} />
             </Col>
 
-            <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12 py-1 h-full">  
+            <Col className="col-11 mx-auto mx-lg-0 col-lg-6 col-md-10 col-sm-12 py-1">  
                 <div className={`d-flex justify-content-center mt-2`}>
                     <h1 className={`${styles.page_title}`}>{t("pages.register-admin.title")}</h1>
                 </div>
@@ -368,10 +372,4 @@ export default function RegisterAdmin({ locale }) {
     );
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }: { locale: string }) => {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ["common"])),
-        },
-    };
-};
+export const getStaticProps: GetStaticProps = withI18n()
