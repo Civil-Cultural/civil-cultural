@@ -78,6 +78,9 @@
         "localization": "Mjesto",
         "contacts": "Kontakti",
         "account": "Račun"
+      },
+      "register-admin": {
+        "title": "Administrator registra"
       }
     }
   }

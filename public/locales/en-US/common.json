@@ -77,6 +77,9 @@
       "localization": "Localization",
       "contacts": "Contacts",
       "account": "Account"
+    },
+    "register-admin": {
+      "title": "Register administrator"
     }
   }
 }

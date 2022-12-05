@@ -77,6 +77,9 @@
       "localization": "الموقع",
       "contacts": "جهات الاتصال",
       "account": "الحساب"
+    },
+    "register-admin": {
+      "title": "مسؤول التسجيل"
     }
   }
 }

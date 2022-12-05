@@ -77,6 +77,9 @@
         "localization": "위치",
         "contacts": "콘택트 렌즈",
         "account": "계산서"
+      },
+      "register-admin": {
+        "title": "등록 관리자"
       }
     }
   }
