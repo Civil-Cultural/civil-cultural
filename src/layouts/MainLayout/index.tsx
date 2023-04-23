@@ -1,7 +1,9 @@
 /* ----------- RESOURCES ----------- */
 import { useState } from "react";
-import { useTheme } from "Hooks/useTheme";
 import Head from "next/head";
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- CONTRACTS ----------- */
 import { LayoutProps } from "Contracts/PageProps";

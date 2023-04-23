@@ -1,7 +1,9 @@
 /* ----------- RESOURCES ----------- */
-import { forwardRef, Ref, useContext, useState } from 'react';
+import { forwardRef, Ref, useState } from 'react';
+
 import * as ReactIs from 'react-is'
-import { useTheme } from 'Hooks/useTheme'
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- CONTRACTS ----------- */
 import { ModalPopupProps } from 'Contracts/Components'

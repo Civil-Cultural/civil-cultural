@@ -1,6 +1,8 @@
 /* ----------- RESOURCES ----------- */
 import { GetStaticProps } from 'next'
-import { useTheme } from 'Hooks/useTheme'
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 import { useTranslation } from 'next-i18next'
 import { useRive, useStateMachineInput } from 'rive-react'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -63,10 +65,10 @@ export default function Login() {
     const success = useStateMachineInput(rive, STATE_MACHINE_NAME, STATE_MACHINE_VALID);
     const fail = useStateMachineInput(rive, STATE_MACHINE_NAME, STATE_MACHINE_INVALID);
 
-    const illustrationValidate = (e) =>
+    const illustrationValidate = (e: any) =>
         e.target?.value.length > 0 ? checking && checking.fire() : fail && fail.fire();
 
-    function submit(data) {
+    function submit(data: any) {
         success && success.fire();
         console.log(data);
     }

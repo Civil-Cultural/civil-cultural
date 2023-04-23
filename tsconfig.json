@@ -1,61 +1,37 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "baseUrl": "./src",
-    "sourceMap": true,
-    "paths": {
-      "Styles/*": [
-        "./styles/*"
-      ],
-      "Layouts/*": [
-        "./layouts/*"
-      ],
-      "Pages/*": [
-        "./pages/*"
-      ],
-      "Components/*": [
-        "./components/*"
-      ],
-      "Contracts/*": [
-        "./contracts/*"
-      ],
-      "Services/*": [
-        "./services/*"
-      ],
-      "Utils/*": [
-        "./utils/*"
-      ],
-      "Context/*": [
-        "./context/*"
-      ],
-      "Hooks/*": [
-        "./hooks/*"
-      ],
-      "Assets/*": [
-        "./assets/*"
-      ],
-    },
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "importsNotUsedAsValues": "remove",
-    "jsx": "preserve",
-    "incremental": true
+      "target": "es5",
+      "baseUrl": "./src",
+      "sourceMap": true,
+      "paths": {
+          "Styles/*": ["./styles/*"],
+          "Layouts/*": ["./layouts/*"],
+          "Pages/*": ["./pages/*"],
+          "Components/*": ["./components/*"],
+          "Contracts/*": ["./contracts/*"],
+          "Services/*": ["./services/*"],
+          "Utils/*": ["./utils/*"],
+          "Context/*": ["./context/*"],
+          "Hooks/*": ["./hooks/*"],
+          "Assets/*": ["./assets/*"]
+      },
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "importsNotUsedAsValues": "remove",
+      "jsx": "preserve",
+      "incremental": true
   },
   "include": [
     "next-env.d.ts",

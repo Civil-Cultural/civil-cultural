@@ -1,12 +1,12 @@
 /* ----------- RESOURCES ----------- */
-import { useState, useRef, useEffect, forwardRef, Ref, HTMLAttributes } from 'react'
-import { useTranslation } from 'next-i18next'
-import { useTheme } from "Hooks/useTheme";
+import { useState, useRef, forwardRef, Ref, HTMLAttributes } from 'react'
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- COMPONENTS ----------- */
 import { IoMdClose, IoMdSearch } from "react-icons/io";
-import { AiFillAudio } from "react-icons/ai";
-import { Col, Overlay, InputGroup, FormControl, Button, Popover } from "react-bootstrap";
+import { InputGroup, FormControl, Button } from "react-bootstrap";
 
 /* ----------- STYLES ----------- */
 import styles from "Components/InputSearch/styles.module.scss";
@@ -14,11 +14,8 @@ import styles from "Components/InputSearch/styles.module.scss";
 function InputSearch({ className, ...props }: HTMLAttributes<HTMLDivElement>, ref: Ref<any>) {
     const { theme } = useTheme();
     const [text, setText] = useState("");
-    const [isListening, setIsListening] = useState(false);
 
-    const { t } = useTranslation();
     const buttonRef = useRef<HTMLButtonElement>(null);
-    const box_iconRef = useRef<HTMLDivElement>(null);
 
     return (
         <>

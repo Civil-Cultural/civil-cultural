@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 
 /* Components */
-import Astro from 'Assets/astro_error.png'
+import Astro from 'assets/astro_error.png'
 import {
     Col
 } from 'react-bootstrap'

@@ -1,6 +1,8 @@
 /* ----------- RESOURCES ----------- */
-import { forwardRef } from 'react'
-import { useTheme } from 'Hooks/useTheme'
+import { ForwardedRef, forwardRef } from 'react'
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext"
 
 /* ----------- CONTRACTS ----------- */
 import { LabelProps } from 'Contracts/Components'
@@ -18,7 +20,7 @@ interface RefLabel {
 
 function Label(
     { children, className = '', ...props }: LabelProps,
-    ref: RefLabel
+    ref: ForwardedRef<RefLabel>
 ) {
     const { theme } = useTheme()
 

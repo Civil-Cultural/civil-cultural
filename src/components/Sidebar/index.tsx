@@ -1,9 +1,11 @@
 /* ----------- RESOURCES ----------- */
 import { useState } from "react";
-import { useTheme } from "Hooks/useTheme";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { linksMenu } from "Utils/LinksMenu";
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- ICONS ----------- */
 import { BiLogOutCircle, BiLogInCircle } from "react-icons/bi";

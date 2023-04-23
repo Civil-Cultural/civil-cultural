@@ -9,7 +9,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 /* ----------- HOOKS ----------- */
-import { useTheme } from "Hooks/useTheme";
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- UTILS ----------- */
 import { withI18n } from "Utils/withI18n";
@@ -41,7 +41,7 @@ interface CountryProps {
 /* ----------- STYLES ----------- */
 import styles from "Pages/register/styles.module.scss";
 
-export default function Register({ locale }) {
+export default function Register() {
     const { theme } = useTheme();
     const [countries, setCountries] = useState<CountryProps[]>([]);
     const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -110,7 +110,7 @@ export default function Register({ locale }) {
         formState: { errors },
     } = useForm({ mode: "onChange", resolver: yupResolver(validators) });
 
-    const submit = (data) => console.table(data);
+    const submit = (data: any) => console.table(data);
 
     useEffect(() => {
         axios

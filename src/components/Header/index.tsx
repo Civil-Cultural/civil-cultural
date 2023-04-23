@@ -1,71 +1,63 @@
 /* ----------- RESOURCES ----------- */
-import { useState, useEffect, useRef } from "react";
-import NextLink from "next/link";
-import { useTheme } from "Hooks/useTheme";
+import { useState, useEffect, useRef } from "react"
+import NextLink from "next/link"
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext"
 
 /* ----------- ICONS ----------- */
-import { MdMenu } from "react-icons/md";
+import { MdMenu } from "react-icons/md"
 
 /* ----------- COMPONENTS ----------- */
-import { Col } from "react-bootstrap";
-import InputSearch from "Components/InputSearch";
-import Switch from "Components/Switch";
-import Logo from "Components/Logo";
-import Button from "react-bootstrap/Button";
-import { DropdownMenu } from "Components/Header/dropdownMenu";
+import { Col } from "react-bootstrap"
+import InputSearch from "Components/InputSearch"
+import Switch from "Components/Switch"
+import Logo from "Components/Logo"
+import Button from "react-bootstrap/Button"
+import { DropdownMenu } from "Components/Header/dropdownMenu"
 
 /* ----------- STYLES ----------- */
-import styles from "Components/Header/styles.module.scss";
-
-interface HTMLEventElement extends MouseEvent {
-  target: EventTarget & HTMLElement;
-}
+import styles from "Components/Header/styles.module.scss"
 
 interface SidebarState {
-  isActive: boolean;
-  setIsActive: () => void;
+  isActive: boolean
+  setIsActive: () => void
 }
 
 export default function Header({ isActive, setIsActive }: SidebarState) {
-  const { theme } = useTheme();
-  const [isShow, setIsShow] = useState(false);
+  const { theme } = useTheme()
+  const [isShow, setIsShow] = useState(false)
 
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  /**
-   * @description Toggle function showing search input
-   * @return void
-   */
-  const setViewDropDown = () => setIsShow((x) => !x);
+  const buttonRef = useRef<HTMLButtonElement>(null)
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    function pageClick(evt: HTMLEventElement) {
-      const targetId = evt.target?.parentElement?.id ?? evt.target?.id;
+    function pageClick(evt: any) {
+      const targetId = evt.target?.parentElement?.id ?? evt.target?.id
 
       if (
         isShow &&
         targetId != buttonRef?.current?.id &&
         !dropdownRef.current?.contains(evt.target as Element)
       ) {
-        setIsShow(false);
+        setIsShow(false)
       }
     }
 
     function pageKeyPress(evt: KeyboardEvent) {
-      if (evt?.key == "Escape") setIsShow(false);
+      if (evt?.key == "Escape") setIsShow(false)
     }
 
-    let doc = document.querySelector("body");
+    let doc = document.querySelector("body")
 
-    doc && doc.addEventListener("click", pageClick);
-    doc && doc.addEventListener("keydown", pageKeyPress);
+    doc && doc.addEventListener("click", pageClick)
+    doc && doc.addEventListener("keydown", pageKeyPress)
 
     return () => {
-      doc && doc.removeEventListener("click", pageClick);
-      doc && doc.removeEventListener("keydown", pageKeyPress);
-    };
-  }, [isShow]);
+      doc && doc.removeEventListener("click", pageClick)
+      doc && doc.removeEventListener("keydown", pageKeyPress)
+    }
+  }, [isShow])
 
   return (
     <header className={`${styles.header_container} ${styles[theme]}`}>
@@ -82,9 +74,8 @@ export default function Header({ isActive, setIsActive }: SidebarState) {
               onClick={setIsActive}
             >
               <MdMenu
-                className={`${styles.icon_menu} ${styles[theme]} w-100 ${
-                  isActive ? styles.open : ""
-                } `}
+                className={`${styles.icon_menu} ${styles[theme]} w-100 ${isActive ? styles.open : ""
+                  } `}
               />
             </Button>
           </Col>
@@ -126,9 +117,8 @@ export default function Header({ isActive, setIsActive }: SidebarState) {
                   onClick={setIsActive}
                 >
                   <MdMenu
-                    className={`${styles.icon_menu} ${styles[theme]} w-100 ${
-                      isActive ? styles.open : ""
-                    } `}
+                    className={`${styles.icon_menu} ${styles[theme]} w-100 ${isActive ? styles.open : ""
+                      } `}
                   />
                 </Button>
               </li>
@@ -137,5 +127,5 @@ export default function Header({ isActive, setIsActive }: SidebarState) {
         </Col>
       </Col>
     </header>
-  );
+  )
 }

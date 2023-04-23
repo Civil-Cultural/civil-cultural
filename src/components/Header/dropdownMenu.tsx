@@ -2,7 +2,9 @@
 import { useRef, useState, useEffect } from "react"
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-import { useTheme } from 'Hooks/useTheme'
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- COMPONENTS ----------- */
 import { Button } from 'react-bootstrap'
@@ -41,7 +43,7 @@ export function DropdownMenu() {
     }
   }, [isActive])
 
-  const changeLanguage = (setLocale) => push(pathname, pathname, { locale: setLocale })
+  const changeLanguage = (locale: string) => push(pathname, pathname, { locale })
 
   const languages = [
     { language: t('portuguese'), location: 'pt-BR' },

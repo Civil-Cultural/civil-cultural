@@ -1,6 +1,8 @@
 /* ----------- RESOURCES ----------- */
 import Image from 'next/image'
-import { useTheme } from "Hooks/useTheme";
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- CONTRACTS ----------- */
 import { ImageProps } from "Contracts/Components";

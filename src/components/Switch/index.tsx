@@ -1,7 +1,8 @@
 /* ----------- RESOURCES ----------- */
-/* ----------- RESOURCES ----------- */
 import { useState, useEffect } from "react";
-import { useTheme } from "Hooks/useTheme";
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* -----------  CONTRACTS ----------- */
 import { SwitchProps } from "Contracts/Components";

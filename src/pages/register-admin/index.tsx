@@ -9,7 +9,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 /* ----------- HOOKS ----------- */
-import { useTheme } from "Hooks/useTheme";
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- UTILS ----------- */
 import { withI18n } from "Utils/withI18n";
@@ -111,7 +111,7 @@ export default function RegisterAdmin() {
         formState: { errors },
     } = useForm({ mode: "onChange", resolver: yupResolver(validators) });
 
-    const submit = (data) => console.table(data);
+    const submit = (data: any) => console.table(data);
 
     useEffect(() => {
         axios

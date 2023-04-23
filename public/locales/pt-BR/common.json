@@ -1,86 +1,86 @@
 {
-  "portuguese": "Portuguese",
-  "english": "English",
-  "spanish": "Español",
-  "arabic": "Árabe",
-  "french": "Francés",
-  "italian": "Italian",
-  "albanian": "Albanés",
-  "catalán": "Catalán",
-  "croatian": "Croata",
-  "czech": "Checo",
-  "Danish": "Danés",
-  "German": "Alemán",
-  "Greek": "Griego",
-  "Japanese": "Japonés",
-  "Korean": "Coreano",
-  "error": {
-    "error": "Erro"
-  },
-  "forms": {
-    "password": "Senha",
-    "name": "Nome",
-    "password_confirmation": "Confirme a senha",
-    "phone_cell": "Celular",
-    "landline": "Telefone fixo",
-    "personal_identification": "Identificação pessoal",
-    "country": "País",
-    "state": "Estado",
-    "city": "Cidade",
-    "address": "Endereço",
-    "number": "Número",
-    "message_error": {
-      "required": ":FIELD obrigatório",
-      "email": "Email inválido",
-      "password_confirmation": "Senhas divergentes",
-      "number": "Por favor, insira apenas número",
-      "max": "No máximo :NUM caracteres",
-      "type": "Por favor, digite apenas letras"
+    "portuguese": "Português",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "Árabe",
+    "french": "Francés",
+    "italian": "Italian",
+    "albanian": "Albanés",
+    "catalán": "Catalán",
+    "croatian": "Croata",
+    "czech": "Checo",
+    "Danish": "Danés",
+    "German": "Alemán",
+    "Greek": "Griego",
+    "Japanese": "Japonés",
+    "Korean": "Coreano",
+    "error": {
+        "error": "Erro"
+    },
+    "forms": {
+        "password": "Senha",
+        "name": "Nome",
+        "password_confirmation": "Confirme a senha",
+        "phone_cell": "Celular",
+        "landline": "Telefone fixo",
+        "personal_identification": "Identificação pessoal",
+        "country": "País",
+        "state": "Estado",
+        "city": "Cidade",
+        "address": "Endereço",
+        "number": "Número",
+        "message_error": {
+            "required": ":FIELD obrigatório",
+            "email": "Email inválido",
+            "password_confirmation": "Senhas divergentes",
+            "number": "Por favor, insira apenas número",
+            "max": "No máximo :NUM caracteres",
+            "type": "Por favor, digite apenas letras"
+        }
+    },
+    "components": {
+        "sidebar": {
+            "close": "Fechar",
+            "topic": "Tópicos",
+            "article": "Artigos",
+            "news": "Notícias",
+            "create_publication": "Criar publicação",
+            "configuration": "Configurações"
+        }
+    },
+    "pages": {
+        "home": {
+            "title": "Home",
+            "popover_message": "Este navegador não tem suporte a reconhecimento de fala",
+            "menu_publication": "Publicações mais recentes",
+            "menu_category": "Publicações por categoria"
+        },
+        "login": {
+            "nick_or_email": "Nome ou e-mail",
+            "forgot_password": "Esqueceu a senha?",
+            "create_account": "Criar Conta"
+        },
+        "register": {
+            "title": "Registrar",
+            "link_login": "Logar-se"
+        },
+        "forgot_password": {
+            "title": "Esqueceu a senha",
+            "message_info": "Você recebe-rá por e-mail um link para trocar a senha"
+        },
+        "reset_password": {
+            "title": "Redefinir senha",
+            "message_info": "Escolha uma nova senha para ser redefinida"
+        },
+        "profile": {
+            "edit": "Editar",
+            "personal_information": "Informações pessoais",
+            "localization": "Localização",
+            "contacts": "Contatos",
+            "account": "Conta"
+        },
+        "register-admin": {
+            "title": "Registrar administrador"
+        }
     }
-  },
-  "components": {
-    "sidebar": {
-        "close": "Fechar",
-        "topic": "Tópicos",
-        "article": "Artigos",
-        "news": "Notícias",
-        "create_publication": "Criar publicação",
-        "configuration": "Configurações"
-    }
-  },
-  "pages": {
-    "home": {
-      "title": "Home",
-      "popover_message": "Este navegador não tem suporte a reconhecimento de fala",
-      "menu_publication": "Publicações mais recentes",
-      "menu_category": "Publicações por categoria"
-    },
-    "login": {
-      "nick_or_email": "Nome ou e-mail",
-      "forgot_password": "Esqueceu a senha?",
-      "create_account": "Criar Conta"
-    },
-    "register": {
-      "title": "Registrar",
-      "link_login": "Logar-se"
-    },
-    "forgot_password": {
-      "title": "Esqueceu a senha",
-      "message_info": "Você recebe-rá por e-mail um link para trocar a senha"
-    },
-    "reset_password": {
-      "title": "Redefinir senha",
-      "message_info": "Escolha uma nova senha para ser redefinida"
-    },
-    "profile": {
-      "edit": "Editar",
-      "personal_information": "Informações pessoais",
-      "localization": "Localização",
-      "contacts": "Contatos",
-      "account": "Conta"
-    },
-    "register-admin": {
-      "title": "Registrar administrador"
-    }
-  }
 }

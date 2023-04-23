@@ -3,7 +3,9 @@ import { useMemo } from 'react'
 import { GetStaticProps } from 'next'
 import router from 'next/router'
 import { useTranslation } from 'next-i18next'
-import { useTheme } from 'Hooks/useTheme'
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
@@ -40,7 +42,7 @@ export default function RecoverPassword() {
     formState: { errors }
   } = useForm({ mode: 'onChange', resolver: yupResolver(validatorEmail) })
 
-  function verifyEmail(data) {
+    function verifyEmail(data: any) {
     console.log(data)
   }
 

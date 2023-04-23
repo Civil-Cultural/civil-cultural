@@ -1,5 +1,5 @@
 /* ----------- RESOURCES ----------- */
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { useCookie } from "react-use";
 
 /* ----------- TYPES ----------- */
@@ -13,9 +13,7 @@ export const ThemeContext = createContext({} as CustomThemeContextProps);
 
 export function CustomThemeProvider({ children }: CustomThemeProviderProps) {
   const [cookieTheme, updateCookieTheme] = useCookie("civil_theme");
-  const [theme, setTheme] = useState<ThemeStateProps>(
-    (cookieTheme as ThemeStateProps) ?? "dark"
-  );
+  const [theme, setTheme] = useState<ThemeStateProps>("dark");
 
   useEffect(() => {
     setTheme(cookieTheme as ThemeStateProps);
@@ -23,6 +21,7 @@ export function CustomThemeProvider({ children }: CustomThemeProviderProps) {
 
   const toggleTheme = (themeType: ThemeStateProps) => {
     setTheme(themeType);
+
     updateCookieTheme(themeType, {
       sameSite: "lax",
       secure: process.env.NODE_ENV === "production",
@@ -38,3 +37,5 @@ export function CustomThemeProvider({ children }: CustomThemeProviderProps) {
     <ThemeContext.Provider value={themeProps}>{children}</ThemeContext.Provider>
   );
 }
+
+export const useTheme = () => useContext(ThemeContext)

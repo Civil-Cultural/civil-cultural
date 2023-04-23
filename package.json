@@ -6,7 +6,8 @@
         "dev": "next dev -p 5555",
         "build": "next build",
         "start": "next start",
-        "create-env": "cp .env.example .env"
+        "shell-create-env": "cp .env.example .env",
+        "pws-create-env": "Copy-Item .env.example .env"
     },
     "dependencies": {
         "node": ">=18.12.1",

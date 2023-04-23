@@ -1,5 +1,7 @@
 /* ----------- RESOURCES ----------- */
-import { useTheme } from 'Hooks/useTheme'
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- COMPONENTS ----------- */
 import Alert from 'react-bootstrap/Alert'

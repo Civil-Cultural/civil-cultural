@@ -1,6 +1,7 @@
 /* ----------- RESOURCES ----------- */
 import { forwardRef, Ref, useContext } from 'react'
-import { useTheme } from 'Hooks/useTheme'
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- CONTRACTS ----------- */
 import { FormControlProps } from 'react-bootstrap'

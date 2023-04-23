@@ -1,7 +1,9 @@
 /* ----------- RESOURCES ----------- */
-import { useTheme } from "Hooks/useTheme";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- UTILS ----------- */
 import { withI18n } from "Utils/withI18n";

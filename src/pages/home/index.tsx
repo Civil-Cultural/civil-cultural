@@ -2,13 +2,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
-import { useTheme } from 'Hooks/useTheme'
+
+/* ----------- HOOKS ----------- */
+import { useTheme } from "Context/ThemeContext";
 import { Layout } from 'utils/Layout'
 
 /* ----------- COMPONENTS ----------- */
 import MainLayout from 'Layouts/MainLayout'
 import { Row, Col, Placeholder, Card, ListGroup } from 'react-bootstrap'
-import InputSearch from 'Components/InputSearch'
 
 /* ----------- STYLES ----------- */
 import styles from 'Pages/home/styles.module.scss'
@@ -95,7 +96,7 @@ function Home() {
             <Col className="col-11 col-md-10 col-lg-7 mx-auto mx-lg-0 px-0 border-1 border-secondary">
                 {
                     /* COMPONENTE CARD */
-                    cardTest.map((x, i) => (
+                    cardTest.map((_, i) => (
                         <Card
                             key={i}
                             className={`${styles.cardContainer} ${styles[theme]} col-12 col-lg-10 col-md-11 mx-md-auto px-0`}
@@ -152,7 +153,7 @@ function Home() {
                     <ListGroup className={styles.list}>
                         {Array(5)
                             .fill("teste")
-                            .map((x, i) => (
+                            .map((_, i) => (
                                 <ListGroup.Item key={i} className={styles.listItem}>
                                     <Card.Title
                                         className={styles.cardItem}

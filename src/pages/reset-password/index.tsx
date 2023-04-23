@@ -7,7 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 /* ----------- HOOKS ----------- */
-import { useTheme } from "Hooks/useTheme";
+import { useTheme } from "Context/ThemeContext";
 
 /* ----------- OTHERS ----------- */
 import { withI18n } from 'Utils/withI18n';
@@ -52,7 +52,7 @@ export default function NewPassword() {
         formState: { errors },
     } = useForm({ mode: "onChange", resolver: yupResolver(validators) });
 
-    function changePassword(data) {
+    function changePassword(data: any) {
         console.log(data);
     }
 
