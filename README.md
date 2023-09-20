@@ -8,7 +8,7 @@
 
   <p>O sistema vai oferecer grande parte do conhecimento sério popular e um sistema único em conversas construtivas, com controle de qualidade. Com memorial das melhores conversas.</p>
 
-<p>Quer contribuir ou ficar atualizado sobre o projeto, entre na nossa comunidade <a href='https://discord.gg/GnrGP3Q35B'>discord</a>.</p> 
+<p>Quer contribuir ou ficar atualizado sobre o projeto, entre na nossa comunidade <a href='https://discord.gg/N5AyXeZqDx'>discord</a>.</p> 
 
 
 <a href='https://github.com/Civil-Cultural/apiCivilCultural/blob/master/LICENCE.MD'>© 2021 Civil Cultural</a>
